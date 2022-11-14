@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.specknet.pdiotapp">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -126,6 +127,11 @@
         <activity
             android:name=".RecordingActivity"
             android:screenOrientation="portrait" />
+
+        <activity android:name=".Login.StartActivity"/>
+        <activity android:name=".Login.RegisterActivity"/>
+        <activity android:name=".Login.LoginActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -141,6 +147,7 @@
                 <action android:name="com.specknet.respeckmodeltesting.RESPECK_DISCONNECTED" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

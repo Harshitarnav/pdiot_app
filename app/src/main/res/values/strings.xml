@@ -55,7 +55,7 @@
     <string name="selected_item">Selected item:</string>
 
     <string-array name="Sensors">
-        <item>Choose Sensor</item>
+        <item>--Choose Sensor--</item>
         <item>Respeck</item>
         <item>Thingy</item>
     </string-array>

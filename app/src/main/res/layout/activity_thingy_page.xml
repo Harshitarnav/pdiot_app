@@ -7,42 +7,30 @@
     tools:context=".Sensors.ThingyPage">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="220dp"
-        android:layout_height="26dp"
-        android:text="Classification"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="50dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/output"
         android:layout_width="360dp"
-        android:layout_height="30dp"
-        android:text="TextView"
+        android:layout_height="47dp"
+        android:text="Confidence Level: Activity"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="72dp" />
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="77dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/output"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/thingy_graphs"
-        android:orientation="vertical">
+        android:layout_width="392dp"
+        android:layout_height="544dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thingy Live Data"/>
+            android:text="Thingy Live Data" />
 
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/thingy_chart"

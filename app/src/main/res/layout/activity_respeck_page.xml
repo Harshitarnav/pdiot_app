@@ -7,38 +7,25 @@
     tools:context=".Sensors.RespeckPage">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="220dp"
-        android:layout_height="26dp"
-        android:text="Classification"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="50dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/output"
         android:layout_width="360dp"
-        android:layout_height="30dp"
-        android:text="TextView"
+        android:layout_height="47dp"
+        android:text="Confidence Level: Activity"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="72dp"
-        app:layout_constraintBottom_toTopOf="@id/textView3"/>
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="77dp" />
 
     <LinearLayout
         android:id="@+id/respeck_graphs"
-        android:layout_width="415dp"
-        android:layout_height="205dp"
+        android:layout_width="392dp"
+        android:layout_height="544dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/output"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,11 +35,7 @@
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/respeck_chart"
             android:layout_width="match_parent"
-            android:layout_height="188dp"
-            android:scrollY="-50dp">
-
-        </com.github.mikephil.charting.charts.LineChart>
-
+            android:layout_height="200dp" />
     </LinearLayout>
 
 

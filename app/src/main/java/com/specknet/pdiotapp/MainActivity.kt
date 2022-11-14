@@ -5,7 +5,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
@@ -14,8 +13,12 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import com.specknet.pdiotapp.Login.StartActivity
 import com.specknet.pdiotapp.Sensors.RespeckPage
 import com.specknet.pdiotapp.Sensors.ThingyPage
 import com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
@@ -28,6 +31,8 @@ import com.specknet.pdiotapp.utils.Utils
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var logout: Button
 
     // buttons and textviews
     lateinit var liveProcessingButton: Button
@@ -66,9 +71,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(introIntent)
         }
 
-        liveProcessingButton = findViewById(R.id.live_button)
+//        liveProcessingButton = findViewById(R.id.live_button)
         pairingButton = findViewById(R.id.ble_button)
         recordButton = findViewById(R.id.record_button)
+
+        logout = findViewById(R.id.logout)
 
         // access the items of the list
         val sensors = resources.getStringArray(R.array.Sensors)
@@ -125,11 +132,11 @@ class MainActivity : AppCompatActivity() {
 
 
     fun setupClickListeners() {
-        liveProcessingButton.setOnClickListener {
-            val intent1 = Intent(this, LiveDataActivity::class.java)
-            val intent2 = Intent(this, ClassificationActivity::class.java)
-            startActivity(intent1)
-        }
+//        liveProcessingButton.setOnClickListener {
+//            val intent1 = Intent(this, LiveDataActivity::class.java)
+//            val intent2 = Intent(this, ClassificationActivity::class.java)
+//            startActivity(intent1)
+//        }
 
         pairingButton.setOnClickListener {
             val intent = Intent(this, ConnectingActivity::class.java)
@@ -140,6 +147,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RecordingActivity::class.java)
             startActivity(intent)
         }
+
+        logout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            Toast.makeText(this@MainActivity, "Logged Out!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity, StartActivity::class.java)
+            startActivity(intent)
+        }
+
+        FirebaseDatabase.getInstance().reference.child("ProgrammingKnowledge").child("Android").setValue("abcd")
 
 //        classificationButton.setOnClickListener {
 //            val intent = Intent(this, ClassificationActivity::class.java)
