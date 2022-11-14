@@ -27,7 +27,7 @@ import androidx.core.app.NotificationCompat;
 import com.polidea.rxandroidble.RxBleClient;
 import com.polidea.rxandroidble.RxBleConnection;
 import com.polidea.rxandroidble.RxBleDevice;
-import com.specknet.pdiotapp.MainActivity;
+import com.specknet.pdiotapp.Login.StartActivity;
 import com.specknet.pdiotapp.R;
 import com.specknet.pdiotapp.utils.Constants;
 import com.specknet.pdiotapp.utils.RESpeckPacketHandler;
@@ -154,7 +154,7 @@ public class BluetoothSpeckService extends Service {
     private void startInForeground() {
         Log.d(TAG, "startInForeground: here");
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.O) {
-            Intent notificationIntent = new Intent(this, MainActivity.class);
+            Intent notificationIntent = new Intent(this, StartActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
             Notification notification = new Notification.Builder(this).setContentTitle(

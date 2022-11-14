@@ -1,4 +1,4 @@
-package com.specknet.pdiotapp
+package com.specknet.pdiotapp.Login
 
 import android.Manifest
 import android.content.Context
@@ -18,9 +18,11 @@ import androidx.core.app.ActivityCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.specknet.pdiotapp.Login.StartActivity
+import com.specknet.pdiotapp.R
+import com.specknet.pdiotapp.RecordingActivity
 import com.specknet.pdiotapp.Sensors.RespeckPage
 import com.specknet.pdiotapp.Sensors.ThingyPage
+import com.specknet.pdiotapp.MainActivity
 import com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
 import com.specknet.pdiotapp.bluetooth.ConnectingActivity
 import com.specknet.pdiotapp.classification.ClassificationActivity
@@ -30,7 +32,7 @@ import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.Utils
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class StartActivity : AppCompatActivity() {
 
     lateinit var logout: Button
 
@@ -90,13 +92,13 @@ class MainActivity : AppCompatActivity() {
             spinner.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                    Toast.makeText(this@MainActivity, getString(R.string.selected_item) + " " + "" + sensors[position], Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@StartActivity, getString(R.string.selected_item) + " " + "" + sensors[position], Toast.LENGTH_SHORT).show()
                     if(position==1) {
-                        intent = Intent(this@MainActivity,RespeckPage::class.java)
+                        intent = Intent(this@StartActivity,RespeckPage::class.java)
                         startActivity(intent)
                     }
                     if(position==2) {
-                        intent = Intent(this@MainActivity,ThingyPage::class.java)
+                        intent = Intent(this@StartActivity,ThingyPage::class.java)
                         startActivity(intent)
                     }
                 }
@@ -150,8 +152,8 @@ class MainActivity : AppCompatActivity() {
 
         logout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            Toast.makeText(this@MainActivity, "Logged Out!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this@MainActivity, StartActivity::class.java)
+            Toast.makeText(this@StartActivity, "Logged Out!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@StartActivity, MainActivity::class.java)
             startActivity(intent)
         }
 
