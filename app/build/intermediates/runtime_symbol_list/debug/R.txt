@@ -44,6 +44,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02000b
 int animator mtrl_fab_show_motion_spec 0x7f02000c
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f02000d
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f02000e
+int array Sensors 0x7f030002
 int array activity_type_array 0x7f030000
 int array sensor_type_array 0x7f030001
 int attr actionBarDivider 0x7f040000
@@ -2343,6 +2344,8 @@ int layout activity_live_data 0x7f0c001f
 int layout activity_main 0x7f0c0020
 int layout activity_on_boarding 0x7f0c0021
 int layout activity_recording 0x7f0c0022
+int layout activity_respeck_page 0x7f0c007f
+int layout activity_thingy_page 0x7f0c0080
 int layout custom_dialog 0x7f0c0023
 int layout design_bottom_navigation_item 0x7f0c0024
 int layout design_bottom_sheet_dialog 0x7f0c0025
@@ -2598,6 +2601,7 @@ int string section_live 0x7f110099
 int string section_live_title 0x7f11009a
 int string section_record 0x7f11009b
 int string section_record_title 0x7f11009c
+int string selected_item 0x7f1100b7
 int string status_bar_notification_info_overflow 0x7f11009d
 int string store_picture_message 0x7f11009e
 int string store_picture_title 0x7f11009f

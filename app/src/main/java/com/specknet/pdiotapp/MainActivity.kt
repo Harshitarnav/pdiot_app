@@ -11,10 +11,13 @@ import android.provider.Settings
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
+import android.view.View
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import com.google.android.material.snackbar.Snackbar
+import com.specknet.pdiotapp.Sensors.RespeckPage
+import com.specknet.pdiotapp.Sensors.ThingyPage
 import com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
 import com.specknet.pdiotapp.bluetooth.ConnectingActivity
 import com.specknet.pdiotapp.classification.ClassificationActivity
@@ -66,7 +69,36 @@ class MainActivity : AppCompatActivity() {
         liveProcessingButton = findViewById(R.id.live_button)
         pairingButton = findViewById(R.id.ble_button)
         recordButton = findViewById(R.id.record_button)
-        classificationButton = findViewById(R.id.classification_button)
+
+        // access the items of the list
+        val sensors = resources.getStringArray(R.array.Sensors)
+
+        // access the spinner
+        val spinner = findViewById<Spinner>(R.id.classification_button)
+        if (spinner != null) {
+            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, sensors
+            )
+            spinner.adapter = adapter
+
+            spinner.onItemSelectedListener = object :
+                AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                    Toast.makeText(this@MainActivity, getString(R.string.selected_item) + " " + "" + sensors[position], Toast.LENGTH_SHORT).show()
+                    if(position==1) {
+                        intent = Intent(this@MainActivity,RespeckPage::class.java)
+                        startActivity(intent)
+                    }
+                    if(position==2) {
+                        intent = Intent(this@MainActivity,ThingyPage::class.java)
+                        startActivity(intent)
+                    }
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>) {
+                    // write code to perform some action
+                }
+            }
+        }
 
         permissionAlertDialog = AlertDialog.Builder(this)
 
@@ -81,6 +113,16 @@ class MainActivity : AppCompatActivity() {
         filter.addAction(Constants.ACTION_RESPECK_DISCONNECTED)
 
     }
+
+    fun setupRespeck() {
+        liveProcessingButton.setOnClickListener {
+            val intent1 = Intent(this, LiveDataActivity::class.java)
+            val intent2 = Intent(this, ClassificationActivity::class.java)
+            startActivity(intent1)
+        }
+    }
+
+
 
     fun setupClickListeners() {
         liveProcessingButton.setOnClickListener {
@@ -99,10 +141,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        classificationButton.setOnClickListener {
-            val intent = Intent(this, ClassificationActivity::class.java)
-            startActivity(intent)
-        }
+//        classificationButton.setOnClickListener {
+//            val intent = Intent(this, ClassificationActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
     fun setupPermissions() {

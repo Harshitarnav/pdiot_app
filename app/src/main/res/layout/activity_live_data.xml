@@ -25,11 +25,9 @@
         android:layout_width="360dp"
         android:layout_height="30dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="76dp"
-        app:layout_constraintEnd_toEndOf="@id/textView3"
-        app:layout_constraintStart_toStartOf="@id/respeck_graphs"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="72dp" />
 
     <LinearLayout
         android:id="@+id/respeck_graphs"

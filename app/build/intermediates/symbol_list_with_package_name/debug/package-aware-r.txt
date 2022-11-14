@@ -45,6 +45,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array Sensors
 array activity_type_array
 array sensor_type_array
 attr actionBarDivider
@@ -2344,6 +2345,8 @@ layout activity_live_data
 layout activity_main
 layout activity_on_boarding
 layout activity_recording
+layout activity_respeck_page
+layout activity_thingy_page
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2599,6 +2602,7 @@ string section_live
 string section_live_title
 string section_record
 string section_record_title
+string selected_item
 string status_bar_notification_info_overflow
 string store_picture_message
 string store_picture_title
