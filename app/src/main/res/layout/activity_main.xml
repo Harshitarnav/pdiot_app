@@ -14,6 +14,15 @@
         android:layout_height="match_parent">
 
 
+        <TextView
+            android:id="@+id/respeck_status_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="20px"
+            android:text="Respeck status: Disconnected"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
@@ -26,6 +35,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/classification_button"/>
 
+
         <Button
             android:id="@+id/record_button"
             android:layout_width="550px"
@@ -34,25 +44,27 @@
             android:background="#03A9F4"
             android:text="Record data"
             android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/ble_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/classification_button"
-            app:layout_constraintBottom_toTopOf="@+id/ble_button"/>
-
+            app:layout_constraintTop_toBottomOf="@+id/classification_button" />
 
         <Button
             android:id="@+id/ble_button"
             android:layout_width="550px"
             android:layout_height="wrap_content"
-            android:text="Connect sensors"
             android:layout_marginTop="100px"
             android:layout_marginBottom="100px"
             android:background="#03A9F4"
+            android:text="Connect sensors"
             android:textColor="#FFFFFF"
-            app:layout_constraintTop_toBottomOf="@+id/classification_button"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/classification_button"
+            app:layout_constraintVertical_bias="0.357" />
 
         <Spinner
             android:id="@+id/classification_button"
@@ -66,15 +78,17 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <Button
+            android:id="@+id/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/logout"
-            android:text="Logout"
             android:layout_centerInParent="true"
+            android:text="Logout"
+            app:layout_constraintBottom_toTopOf="@+id/record_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/record_button"/>
+            app:layout_constraintVertical_bias="0.384" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

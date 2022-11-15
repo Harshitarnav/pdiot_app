@@ -92,7 +92,15 @@ class StartActivity : AppCompatActivity() {
             spinner.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                    Toast.makeText(this@StartActivity, getString(R.string.selected_item) + " " + "" + sensors[position], Toast.LENGTH_SHORT).show()
+
+                    val action = intent.action
+
+                    when(action) {
+                        Constants.ACTION_RESPECK_CONNECTED -> Toast.makeText(this@StartActivity, getString(R.string.selected_item) + " " + "" + sensors[1], Toast.LENGTH_SHORT).show()
+                        Constants.ACTION_RESPECK_DISCONNECTED -> Toast.makeText(this@StartActivity, getString(R.string.selected_item) + " " + "" + sensors[2], Toast.LENGTH_SHORT).show()
+                        else -> Toast.makeText(this@StartActivity, "Please connect a Sensor", Toast.LENGTH_SHORT).show()
+                    }
+//                    Toast.makeText(this@StartActivity, getString(R.string.selected_item) + " " + "" + sensors[position], Toast.LENGTH_SHORT).show()
                     if(position==1) {
                         intent = Intent(this@StartActivity,RespeckPage::class.java)
                         startActivity(intent)
