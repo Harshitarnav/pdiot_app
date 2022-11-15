@@ -6,28 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Hello World!"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="219dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/register"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="72dp"
+        android:text="Cannot login? Register here"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="register"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="171dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="252dp"
+        android:hint="Password" />
+
+    <Button
         android:id="@+id/register"
-        android:layout_marginTop="100dp" />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="login"
+        android:layout_alignBottom="@+id/password"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="-274dp"
+        android:text="REGISTER"
+        app:layout_constraintStart_toStartOf="@id/login" />
+
+    <Button
         android:id="@+id/login"
-        android:layout_below="@id/register"
-        android:layout_marginTop="100dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/register"
+        android:layout_marginTop="-148dp"
+        android:text="login" />
 
 </RelativeLayout>
