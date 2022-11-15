@@ -13,7 +13,6 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-//import com.specknet.pdiotapp.Login.LoginActivity;
 import com.specknet.pdiotapp.Login.RegisterActivity;
 import com.specknet.pdiotapp.Login.StartActivity;
 
