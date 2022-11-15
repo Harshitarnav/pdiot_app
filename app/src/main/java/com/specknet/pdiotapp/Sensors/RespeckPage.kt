@@ -18,7 +18,8 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
-import com.specknet.pdiotapp.Login.RegisterActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.specknet.pdiotapp.R
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.RESpeckLiveData
@@ -28,7 +29,6 @@ import java.io.IOException
 import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
 import java.util.*
-import com.specknet.pdiotapp.Login.RegisterActivity.DataStorage
 
 class RespeckPage : AppCompatActivity() {
 
@@ -59,6 +59,10 @@ class RespeckPage : AppCompatActivity() {
         }
     }
 
+    private var auth: FirebaseAuth? = null
+    private var store: FirebaseFirestore? = null
+    var userID: String? = null
+
     lateinit var output: TextView
 
     // global graph variables
@@ -82,7 +86,13 @@ class RespeckPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_respeck_page)
 
+
+        auth = FirebaseAuth.getInstance()
+        store = FirebaseFirestore.getInstance()
+
         setupCharts()
+
+
 
         // set up the broadcast receiver
         respeckLiveUpdateReceiver = object : BroadcastReceiver() {
@@ -293,6 +303,13 @@ class RespeckPage : AppCompatActivity() {
             output.text = predictedLabel
 
         }
+        userID = auth!!.currentUser!!.uid
+        val doc_ref = store!!.collection("users").document(userID!!)
+        val user:HashMap<String,String> = HashMap<String,String>()
+        user["Action"] = labels[maxIndex]
+        user["Confidence"] = maxValue.toString()
+
         return maxValue
     }
 }
+
