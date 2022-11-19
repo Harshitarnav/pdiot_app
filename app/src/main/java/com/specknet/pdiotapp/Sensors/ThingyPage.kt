@@ -88,6 +88,10 @@ class ThingyPage : AppCompatActivity() {
 
         // set up the broadcast receiver
         thingyLiveUpdateReceiver = object : BroadcastReceiver() {
+
+            // Order for CNN
+            // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
+            val data = FloatArray(6)
             override fun onReceive(context: Context, intent: Intent) {
 
                 Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
@@ -107,6 +111,20 @@ class ThingyPage : AppCompatActivity() {
 
                     time += 1
                     updateGraph("thingy", x, y, z)
+
+                    // get all relevant intent contents
+                    data[0] = liveData.accelX
+                    data[1] = liveData.accelY
+                    data[2] = liveData.accelZ
+                    val (i, j, k) = liveData.gyro
+                    data[3] = i
+                    data[4] = j
+                    data[5] = k
+                    window.remove()
+                    window.add(data)
+
+                    // Call to function processing the data must be here
+                    displayData(data)
 
                 }
             }
@@ -131,8 +149,6 @@ class ThingyPage : AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
-        getDataPoint()
 
         // Thingy
 
@@ -218,47 +234,47 @@ class ThingyPage : AppCompatActivity() {
         return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffSets, declaredLength)
     }
 
-    fun getDataPoint(): FloatArray? {
-
-        // Order for CNN
-        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
-        val data = FloatArray(6)
-
-        // set up the broadcast receiver
-        thingyLiveUpdateReceiver = object : BroadcastReceiver() {
-            override fun onReceive(context: Context, intent: Intent) {
-                Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
-                val action = intent.action
-                if (action === Constants.ACTION_RESPECK_LIVE_BROADCAST) {
-                    val liveData =
-                        intent.getSerializableExtra(Constants.RESPECK_LIVE_DATA) as RESpeckLiveData?
-                    Log.d("Live", "onReceive: liveData = $liveData")
-
-                    // get all relevant intent contents
-                    data[0] = liveData!!.accelX
-                    data[1] = liveData.accelY
-                    data[2] = liveData.accelZ
-                    val (x, y, z) = liveData.gyro
-                    data[3] = x
-                    data[4] = y
-                    data[5] = z
-                    window.remove()
-                    window.add(data)
-
-                    // Call to function processing the data must be here
-                    displayData(data)
-                }
-            }
-        }
-
-        // register receiver on another thread
-        val handlerThreadRespeck = HandlerThread("bgThreadRespeckLive")
-        handlerThreadRespeck.start()
-        looperThingy = handlerThreadRespeck.looper
-        val handlerRespeck = Handler(looperThingy)
-        this.registerReceiver(thingyLiveUpdateReceiver, filterTestThingy, null, handlerRespeck)
-        return data
-    }
+//    fun getDataPoint(): FloatArray? {
+//
+//        // Order for CNN
+//        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
+//        val data = FloatArray(6)
+//
+//        // set up the broadcast receiver
+//        thingyLiveUpdateReceiver = object : BroadcastReceiver() {
+//            override fun onReceive(context: Context, intent: Intent) {
+//                Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
+//                val action = intent.action
+//                if (action === Constants.ACTION_RESPECK_LIVE_BROADCAST) {
+//                    val liveData =
+//                        intent.getSerializableExtra(Constants.RESPECK_LIVE_DATA) as RESpeckLiveData?
+//                    Log.d("Live", "onReceive: liveData = $liveData")
+//
+//                    // get all relevant intent contents
+//                    data[0] = liveData!!.accelX
+//                    data[1] = liveData.accelY
+//                    data[2] = liveData.accelZ
+//                    val (x, y, z) = liveData.gyro
+//                    data[3] = x
+//                    data[4] = y
+//                    data[5] = z
+//                    window.remove()
+//                    window.add(data)
+//
+//                    // Call to function processing the data must be here
+//                    displayData(data)
+//                }
+//            }
+//        }
+//
+//        // register receiver on another thread
+//        val handlerThreadRespeck = HandlerThread("bgThreadRespeckLive")
+//        handlerThreadRespeck.start()
+//        looperThingy = handlerThreadRespeck.looper
+//        val handlerRespeck = Handler(looperThingy)
+//        this.registerReceiver(thingyLiveUpdateReceiver, filterTestThingy, null, handlerRespeck)
+//        return data
+//    }
 
     fun displayData(data: FloatArray?) {
         inference(window)

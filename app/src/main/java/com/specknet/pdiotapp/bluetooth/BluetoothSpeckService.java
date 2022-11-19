@@ -140,6 +140,7 @@ public class BluetoothSpeckService extends Service {
     public int onStartCommand(Intent intent, int flags, final int startId) {
         Log.d(TAG, "onStartCommand: here");
         new Thread() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void run() {
                 Log.i(TAG, "Starting SpeckService...");
@@ -229,6 +230,7 @@ public class BluetoothSpeckService extends Service {
         // register IMU mode change broadcast filter
 //        final IntentFilter intentFilterRESpeckIMUMode = SpeckIntentFilters.INSTANCE.getRESpeckIMUIntentFilter();
         respeckIMUChangeReceiver = new BroadcastReceiver() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onReceive(Context context, Intent intent) {
                 // maybe the intended state could be included in the broadcast?
@@ -249,6 +251,7 @@ public class BluetoothSpeckService extends Service {
         // Useful when Bluetooth or GPS are dropped.
         // TODO: test with other connected devices
         registerReceiver(new BroadcastReceiver() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             public void onReceive(Context context, Intent intent) {
                 Log.i(TAG, "Received request to scan for Bluetooth devices...");
                 startServiceAndBluetoothScanning();
@@ -274,6 +277,7 @@ public class BluetoothSpeckService extends Service {
     /**
      * Check Bluetooth availability and initiate devices scanning.
      */
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void startServiceAndBluetoothScanning() {
         Log.d(TAG, "startServiceAndBluetoothScanning: here");
         mIsServiceRunning = true;
@@ -294,6 +298,7 @@ public class BluetoothSpeckService extends Service {
         scanForDevices();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void scanForDevices() {
         Log.d(TAG, "scanForDevices: here");
         scanSubscription = rxBleClient.scanBleDevices().subscribe(rxBleScanResult -> {
@@ -359,6 +364,7 @@ public class BluetoothSpeckService extends Service {
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void connectToRESpeck() {
         Log.d(TAG, "connectToRESpeck: here");
         mRESpeckDevice = rxBleClient.getBleDevice(RESPECK_BLE_ADDRESS);
@@ -433,6 +439,7 @@ public class BluetoothSpeckService extends Service {
         establishConnectionAndSubscribe.accept(RxBleConnection.RxBleConnectionState.DISCONNECTED);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void connectToThingy() {
         Log.d(TAG, "connectToThingy: here");
         mThingyDevice = rxBleClient.getBleDevice(THINGY_BLE_ADDRESS);
@@ -511,6 +518,7 @@ public class BluetoothSpeckService extends Service {
      * @apiNote is not set up to handle multiple RESpeck versions, characteristic ID is hardcoded!
      * TODO: update to accept a characteristic and consumer instead of a boolean toggle
      */
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void setupRespeckSubscription(Observable<RxBleConnection> conn, boolean useIMU) {
         String characteristic = useIMU ?
                 Constants.RESPECK_IMU_CHARACTERISTIC_UUID :
@@ -594,6 +602,7 @@ public class BluetoothSpeckService extends Service {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void setupThingySubscription(Observable<RxBleConnection> conn) {
         String characteristic =
                 Constants.THINGY_MOTION_CHARACTERISTIC;

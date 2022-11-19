@@ -79,6 +79,8 @@ class RespeckPage : AppCompatActivity() {
 
     lateinit var looperRespeck: Looper
 
+//    private var liveData: RESpeckLiveData? = null
+
 
     val filterTestRespeck = IntentFilter(Constants.ACTION_RESPECK_LIVE_BROADCAST)
 
@@ -96,17 +98,26 @@ class RespeckPage : AppCompatActivity() {
 
         // set up the broadcast receiver
         respeckLiveUpdateReceiver = object : BroadcastReceiver() {
+
+            // Order for CNN
+            // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
+            val data = FloatArray(6)
+
             override fun onReceive(context: Context, intent: Intent) {
 
                 Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
 
                 val action = intent.action
 
+                Log.i("thread ", "2")
+
                 if (action == Constants.ACTION_RESPECK_LIVE_BROADCAST) {
 
-                    val liveData =
+                    Log.i("thread ", "3")
+
+                    var liveData =
                         intent.getSerializableExtra(Constants.RESPECK_LIVE_DATA) as RESpeckLiveData
-                    Log.d("Live", "onReceive: liveData = " + liveData)
+                    Log.i("Live", "onReceive: liveData = " + liveData)
 
                     // get all relevant intent contents
                     val x = liveData.accelX
@@ -115,6 +126,20 @@ class RespeckPage : AppCompatActivity() {
 
                     time += 1
                     updateGraph("respeck", x, y, z)
+
+                    // get all relevant intent contents
+                    data[0] = liveData.accelX
+                    data[1] = liveData.accelY
+                    data[2] = liveData.accelZ
+                    val (i, j, k) = liveData.gyro
+                    data[3] = i
+                    data[4] = j
+                    data[5] = k
+                    window.add(data)
+
+                    // Call to function processing the data must be here
+                    displayData(data)
+                    window.remove()
 
                 }
             }
@@ -140,8 +165,9 @@ class RespeckPage : AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
-        getDataPoint()
+//        // Order for CNN
+//        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
+//        val data = FloatArray(6)
 
         // Respeck
 
@@ -227,47 +253,47 @@ class RespeckPage : AppCompatActivity() {
         return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffSets, declaredLength)
     }
 
-    fun getDataPoint(): FloatArray? {
-
-        // Order for CNN
-        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
-        val data = FloatArray(6)
-
-        // set up the broadcast receiver
-        respeckLiveUpdateReceiver = object : BroadcastReceiver() {
-            override fun onReceive(context: Context, intent: Intent) {
-                Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
-                val action = intent.action
-                if (action === Constants.ACTION_RESPECK_LIVE_BROADCAST) {
-                    val liveData =
-                        intent.getSerializableExtra(Constants.RESPECK_LIVE_DATA) as RESpeckLiveData?
-                    Log.d("Live", "onReceive: liveData = $liveData")
-
-                    // get all relevant intent contents
-                    data[0] = liveData!!.accelX
-                    data[1] = liveData.accelY
-                    data[2] = liveData.accelZ
-                    val (x, y, z) = liveData.gyro
-                    data[3] = x
-                    data[4] = y
-                    data[5] = z
-                    window.remove()
-                    window.add(data)
-
-                    // Call to function processing the data must be here
-                    displayData(data)
-                }
-            }
-        }
-
-        // register receiver on another thread
-        val handlerThreadRespeck = HandlerThread("bgThreadRespeckLive")
-        handlerThreadRespeck.start()
-        looperRespeck = handlerThreadRespeck.looper
-        val handlerRespeck = Handler(looperRespeck)
-        this.registerReceiver(respeckLiveUpdateReceiver, filterTestRespeck, null, handlerRespeck)
-        return data
-    }
+//    fun getDataPoint(): FloatArray? {
+//
+//        // Order for CNN
+//        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
+//        val data = FloatArray(6)
+//
+//        // set up the broadcast receiver
+//        respeckLiveUpdateReceiver = object : BroadcastReceiver() {
+//            override fun onReceive(context: Context, intent: Intent) {
+//                Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
+//                val action = intent.action
+//                if (action === Constants.ACTION_RESPECK_LIVE_BROADCAST) {
+//                    val liveData =
+//                        intent.getSerializableExtra(Constants.RESPECK_LIVE_DATA) as RESpeckLiveData?
+//                    Log.d("Live", "onReceive: liveData = $liveData")
+//
+//                    // get all relevant intent contents
+//                    data[0] = liveData!!.accelX
+//                    data[1] = liveData.accelY
+//                    data[2] = liveData.accelZ
+//                    val (x, y, z) = liveData.gyro
+//                    data[3] = x
+//                    data[4] = y
+//                    data[5] = z
+//                    window.remove()
+//                    window.add(data)
+//
+//                    // Call to function processing the data must be here
+//                    displayData(data)
+//                }
+//            }
+//        }
+//
+//        // register receiver on another thread
+//        val handlerThreadRespeck = HandlerThread("bgThreadRespeckLive")
+//        handlerThreadRespeck.start()
+//        looperRespeck = handlerThreadRespeck.looper
+//        val handlerRespeck = Handler(looperRespeck)
+//        this.registerReceiver(respeckLiveUpdateReceiver, filterTestRespeck, null, handlerRespeck)
+//        return data
+//    }
 
     fun displayData(data: FloatArray?) {
         inference(window)
@@ -309,7 +335,17 @@ class RespeckPage : AppCompatActivity() {
         user["Action"] = labels[maxIndex]
         user["Confidence"] = maxValue.toString()
 
+        doc_ref.set(user).addOnSuccessListener {
+            Log.d(
+                "TAG",
+                "onSuccess: User profile created for user $userID"
+            )
+        }
+
         return maxValue
     }
+
+
+
 }
 
