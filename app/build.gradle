@@ -71,6 +71,7 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.7'
     implementation 'com.google.firebase:firebase-database:9.8.0'
     implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation "com.polidea.rxandroidble2:rxandroidble:1.11.1"
 
     // Tensorflow Lite dependencies
 //    implementation 'org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2'

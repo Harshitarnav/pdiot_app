@@ -23,6 +23,7 @@ MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /Users/arnav/.gradle/
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] /Users/arnav/.gradle/caches/transforms-3/f893f1eb02d084c88f65d47af0970b34/transformed/jetified-play-services-vision-19.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [io.reactivex:rxandroid:1.2.1] /Users/arnav/.gradle/caches/transforms-3/4152016c30f241ac9329d2d3e162715c/transformed/jetified-rxandroid-1.2.1/AndroidManifest.xml:15:1-21:12
 MERGED from [com.google.firebase:firebase-database:19.7.0] /Users/arnav/.gradle/caches/transforms-3/de6db4ab95f6c345aec83997ca7e59a6/transformed/jetified-firebase-database-19.7.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/arnav/.gradle/caches/transforms-3/2a7077224c30f49c44b08836a6a61cb7/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/arnav/.gradle/caches/transforms-3/2aa86c3b86e9a613ebb5ae9bcdfeffb8/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.browser:browser:1.0.0] /Users/arnav/.gradle/caches/transforms-3/d53efdb681366fa9c4009f7a36798495/transformed/browser-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -118,12 +119,16 @@ uses-permission#android.permission.BLUETOOTH
 ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:6:5-68
 MERGED from [com.polidea.rxandroidble:rxandroidble:1.2.2] /Users/arnav/.gradle/caches/transforms-3/4710d54d499c1e79aa9a5b1a689ba648/transformed/jetified-rxandroidble-1.2.2/AndroidManifest.xml:11:5-68
 MERGED from [com.polidea.rxandroidble:rxandroidble:1.2.2] /Users/arnav/.gradle/caches/transforms-3/4710d54d499c1e79aa9a5b1a689ba648/transformed/jetified-rxandroidble-1.2.2/AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:11:5-68
 	android:name
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:6:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:7:5-74
 MERGED from [com.polidea.rxandroidble:rxandroidble:1.2.2] /Users/arnav/.gradle/caches/transforms-3/4710d54d499c1e79aa9a5b1a689ba648/transformed/jetified-rxandroidble-1.2.2/AndroidManifest.xml:12:5-74
 MERGED from [com.polidea.rxandroidble:rxandroidble:1.2.2] /Users/arnav/.gradle/caches/transforms-3/4710d54d499c1e79aa9a5b1a689ba648/transformed/jetified-rxandroidble-1.2.2/AndroidManifest.xml:12:5-74
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:12:5-74
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:12:5-74
 	android:name
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:7:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -466,6 +471,8 @@ MERGED from [io.reactivex:rxandroid:1.2.1] /Users/arnav/.gradle/caches/transform
 MERGED from [io.reactivex:rxandroid:1.2.1] /Users/arnav/.gradle/caches/transforms-3/4152016c30f241ac9329d2d3e162715c/transformed/jetified-rxandroid-1.2.1/AndroidManifest.xml:19:5-43
 MERGED from [com.google.firebase:firebase-database:19.7.0] /Users/arnav/.gradle/caches/transforms-3/de6db4ab95f6c345aec83997ca7e59a6/transformed/jetified-firebase-database-19.7.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:19.7.0] /Users/arnav/.gradle/caches/transforms-3/de6db4ab95f6c345aec83997ca7e59a6/transformed/jetified-firebase-database-19.7.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/arnav/.gradle/caches/transforms-3/2a7077224c30f49c44b08836a6a61cb7/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/arnav/.gradle/caches/transforms-3/2a7077224c30f49c44b08836a6a61cb7/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/arnav/.gradle/caches/transforms-3/2aa86c3b86e9a613ebb5ae9bcdfeffb8/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
@@ -747,6 +754,8 @@ ADDED from [com.google.firebase:firebase-auth:21.0.3] /Users/arnav/.gradle/cache
 		ADDED from [com.google.firebase:firebase-auth:21.0.3] /Users/arnav/.gradle/caches/transforms-3/3030bb2c0fc6e4af912ab1eec4e25e2b/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:68:17-109
 uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
 ADDED from [com.polidea.rxandroidble:rxandroidble:1.2.2] /Users/arnav/.gradle/caches/transforms-3/4710d54d499c1e79aa9a5b1a689ba648/transformed/jetified-rxandroidble-1.2.2/AndroidManifest.xml:14:5-88
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:14:5-88
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:14:5-88
 	android:name
 		ADDED from [com.polidea.rxandroidble:rxandroidble:1.2.2] /Users/arnav/.gradle/caches/transforms-3/4710d54d499c1e79aa9a5b1a689ba648/transformed/jetified-rxandroidble-1.2.2/AndroidManifest.xml:14:29-85
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
@@ -755,6 +764,10 @@ ADDED from [com.google.firebase:firebase-database:19.7.0] /Users/arnav/.gradle/c
 		ADDED from [com.google.firebase:firebase-database:19.7.0] /Users/arnav/.gradle/caches/transforms-3/de6db4ab95f6c345aec83997ca7e59a6/transformed/jetified-firebase-database-19.7.0/AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:19.7.0] /Users/arnav/.gradle/caches/transforms-3/de6db4ab95f6c345aec83997ca7e59a6/transformed/jetified-firebase-database-19.7.0/AndroidManifest.xml:33:17-109
+uses-permission-sdk-23#android.permission.ACCESS_FINE_LOCATION
+ADDED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:15:5-86
+	android:name
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.11.1] /Users/arnav/.gradle/caches/transforms-3/72f7683f3149442662a1250b7fc5f3e4/transformed/jetified-rxandroidble-1.11.1/AndroidManifest.xml:15:29-83
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/arnav/.gradle/caches/transforms-3/2a7077224c30f49c44b08836a6a61cb7/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
 	android:authorities
