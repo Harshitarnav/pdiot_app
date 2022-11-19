@@ -855,6 +855,7 @@ color background_material_light
 color black_trans80
 color blue
 color blue_grey
+color bluegray
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -937,6 +938,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color glaucous
 color green
 color grey
 color highlighted_text_material_dark
@@ -1050,6 +1052,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color slategray
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark

@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/zhouyi/pdiot_app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/3e557f5b808785295977cd0644a2c462/transformed/material-1.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/4db106591f5436da673b7f98e21989c9/transformed/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/3e557f5b808785295977cd0644a2c462/transformed/material-1.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,17 +33,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/4db106591f5436da673b7f98e21989c9/transformed/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/9526ddb40c7c6f7ca23fd0b39ccd7125/transformed/mediarouter-1.0.0-alpha5/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/9526ddb40c7c6f7ca23fd0b39ccd7125/transformed/mediarouter-1.0.0-alpha5/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

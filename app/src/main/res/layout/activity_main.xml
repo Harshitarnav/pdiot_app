@@ -8,44 +8,48 @@
     tools:context=".Login.StartActivity">
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="176dp"
+            android:layout_height="66dp"
             android:layout_marginTop="100px"
-            android:text="PDIoT Demonstration App"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Welcome!"
+            android:textColor="#6082B6"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/classification_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/classification_button"/>
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/record_button"
-            android:layout_width="550px"
-            android:layout_height="wrap_content"
+            android:layout_width="396dp"
+            android:layout_height="50dp"
             android:layout_marginTop="100px"
-            android:background="#03A9F4"
+            android:background="#7393B3"
             android:text="Record data"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/ble_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/classification_button" />
 
         <Button
             android:id="@+id/ble_button"
-            android:layout_width="550px"
-            android:layout_height="wrap_content"
+            android:layout_width="394dp"
+            android:layout_height="49dp"
             android:layout_marginTop="100px"
             android:layout_marginBottom="100px"
-            android:background="#03A9F4"
+            android:background="#7393B3"
             android:text="Connect sensors"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +57,7 @@
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/classification_button"
-            app:layout_constraintVertical_bias="0.357" />
+            app:layout_constraintVertical_bias="0.449" />
 
         <Spinner
             android:id="@+id/classification_button"
@@ -63,13 +67,14 @@
             android:text="CLASSIFICATION"
             app:layout_constraintBottom_toTopOf="@+id/record_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <Button
             android:id="@+id/logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="74dp"
+            android:layout_height="41dp"
             android:layout_centerInParent="true"
             android:text="Logout"
             app:layout_constraintBottom_toTopOf="@+id/record_button"
@@ -80,16 +85,15 @@
             app:layout_constraintVertical_bias="0.384" />
 
 
-
-<!--        <TextView-->
-<!--            android:id="@+id/respeck_status_welcome"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20px"-->
-<!--            android:layout_marginRight="20px"-->
-<!--            android:text="Respeck status: Disconnected"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/respeck_status_welcome"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20px"-->
+        <!--            android:layout_marginRight="20px"-->
+        <!--            android:text="Respeck status: Disconnected"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
