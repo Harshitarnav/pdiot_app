@@ -1944,6 +1944,7 @@ id collapseActionView
 id compute_button
 id confirm_button
 id connect_sensors_button
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2150,6 +2151,7 @@ id respeck_graphs
 id respeck_gyro
 id respeck_live_data
 id restart_service_button
+id retrieve_button
 id right
 id right_icon
 id right_side
@@ -2237,9 +2239,11 @@ id textScanResult
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView1
 id textView2
 id textView3
 id textView4
+id textView5
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2364,6 +2368,7 @@ layout activity_on_boarding
 layout activity_recording
 layout activity_register
 layout activity_respeck_page
+layout activity_retrieve
 layout activity_start
 layout activity_thingy_page
 layout browser_actions_context_menu_page

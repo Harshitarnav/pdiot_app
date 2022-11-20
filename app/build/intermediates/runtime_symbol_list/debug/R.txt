@@ -1943,6 +1943,7 @@ int id collapseActionView 0x7f090073
 int id compute_button 0x7f090074
 int id confirm_button 0x7f090075
 int id connect_sensors_button 0x7f090076
+int id constraintLayout 0x7f0901cd
 int id container 0x7f090077
 int id content 0x7f090078
 int id contentPanel 0x7f090079
@@ -2149,6 +2150,7 @@ int id respeck_graphs 0x7f090141
 int id respeck_gyro 0x7f090142
 int id respeck_live_data 0x7f090143
 int id restart_service_button 0x7f090144
+int id retrieve_button 0x7f0901ce
 int id right 0x7f090145
 int id right_icon 0x7f090146
 int id right_side 0x7f090147
@@ -2236,9 +2238,11 @@ int id textScanResult 0x7f090198
 int id textSpacerNoButtons 0x7f090199
 int id textSpacerNoTitle 0x7f09019a
 int id textStart 0x7f09019b
+int id textView1 0x7f0901cf
 int id textView2 0x7f09019c
 int id textView3 0x7f09019d
 int id textView4 0x7f09019e
+int id textView5 0x7f0901d0
 int id text_input_end_icon 0x7f09019f
 int id text_input_start_icon 0x7f0901a0
 int id textinput_counter 0x7f0901a1
@@ -2363,6 +2367,7 @@ int layout activity_on_boarding 0x7f0c0023
 int layout activity_recording 0x7f0c0024
 int layout activity_register 0x7f0c0025
 int layout activity_respeck_page 0x7f0c0026
+int layout activity_retrieve 0x7f0c0087
 int layout activity_start 0x7f0c0027
 int layout activity_thingy_page 0x7f0c0028
 int layout browser_actions_context_menu_page 0x7f0c0029

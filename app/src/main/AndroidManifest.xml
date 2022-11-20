@@ -130,7 +130,7 @@
 
         <activity android:name=".Login.StartActivity"/>
         <activity android:name=".Login.RegisterActivity"/>
-        <activity android:name=".Login.LoginActivity"/>
+        <activity android:name=".retrieve.RetrieveActivity"/>
 
         <activity
             android:name=".MainActivity"

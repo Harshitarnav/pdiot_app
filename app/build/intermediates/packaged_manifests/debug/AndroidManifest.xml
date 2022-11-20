@@ -148,7 +148,7 @@
             android:screenOrientation="portrait" />
         <activity android:name="com.specknet.pdiotapp.Login.StartActivity" />
         <activity android:name="com.specknet.pdiotapp.Login.RegisterActivity" />
-        <activity android:name="com.specknet.pdiotapp.Login.LoginActivity" />
+        <activity android:name="com.specknet.pdiotapp.retrieve.RetrieveActivity" />
         <activity
             android:name="com.specknet.pdiotapp.MainActivity"
             android:screenOrientation="portrait" >

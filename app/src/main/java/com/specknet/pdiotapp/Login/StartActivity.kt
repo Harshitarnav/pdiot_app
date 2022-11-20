@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import com.specknet.pdiotapp.R
 import com.specknet.pdiotapp.RecordingActivity
 import com.specknet.pdiotapp.Sensors.RespeckPage
@@ -28,6 +27,7 @@ import com.specknet.pdiotapp.bluetooth.ConnectingActivity
 import com.specknet.pdiotapp.classification.ClassificationActivity
 import com.specknet.pdiotapp.live.LiveDataActivity
 import com.specknet.pdiotapp.onboarding.OnBoardingActivity
+import com.specknet.pdiotapp.retrieve.RetrieveActivity
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.Utils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -40,7 +40,7 @@ class StartActivity : AppCompatActivity() {
     lateinit var liveProcessingButton: Button
     lateinit var pairingButton: Button
     lateinit var recordButton: Button
-    lateinit var classificationButton: Button
+    lateinit var retrieveButton: Button
 
     // permissions
     lateinit var permissionAlertDialog: AlertDialog.Builder
@@ -78,6 +78,7 @@ class StartActivity : AppCompatActivity() {
         recordButton = findViewById(R.id.record_button)
 
         logout = findViewById(R.id.logout)
+        retrieveButton = findViewById(R.id.retrieve_button)
 
         // access the items of the list
         val sensors = resources.getStringArray(R.array.Sensors)
@@ -142,11 +143,10 @@ class StartActivity : AppCompatActivity() {
 
 
     fun setupClickListeners() {
-//        liveProcessingButton.setOnClickListener {
-//            val intent1 = Intent(this, LiveDataActivity::class.java)
-//            val intent2 = Intent(this, ClassificationActivity::class.java)
-//            startActivity(intent1)
-//        }
+        retrieveButton.setOnClickListener {
+            val intent = Intent(this, RetrieveActivity::class.java)
+            startActivity(intent)
+        }
 
         pairingButton.setOnClickListener {
             val intent = Intent(this, ConnectingActivity::class.java)

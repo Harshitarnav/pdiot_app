@@ -77,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Map<String, Integer> user = new DataStorage().getUserMap();
                     user.put("Lying Down", 0);
                     user.put("Running", 0);
-                    user.put("Sitting/Standing", 0);
+                    user.put("Sitting,Standing", 0);
                     user.put("Stairs", 0);
                     user.put("Walking", 0);
 
