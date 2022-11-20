@@ -291,9 +291,9 @@
 150        <activity android:name="com.specknet.pdiotapp.Login.RegisterActivity" />
 150-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:132:9-59
 150-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:132:19-57
-151        <activity android:name="com.specknet.pdiotapp.Login.LoginActivity" />
-151-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:9-56
-151-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:19-54
+151        <activity android:name="com.specknet.pdiotapp.retrieve.RetrieveActivity" />
+151-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:9-62
+151-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:19-60
 152        <activity
 152-->/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:135:9-149:20
 153            android:name="com.specknet.pdiotapp.MainActivity"

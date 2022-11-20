@@ -397,10 +397,10 @@ activity#com.specknet.pdiotapp.Login.RegisterActivity
 ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:132:9-59
 	android:name
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:132:19-57
-activity#com.specknet.pdiotapp.Login.LoginActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:9-56
+activity#com.specknet.pdiotapp.retrieve.RetrieveActivity
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:9-62
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:19-54
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:19-60
 activity#com.specknet.pdiotapp.MainActivity
 ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:135:9-149:20
 	android:screenOrientation

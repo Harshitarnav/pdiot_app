@@ -2244,6 +2244,11 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
+id textView7
+id textView8
+id textView9
+id textView910
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter

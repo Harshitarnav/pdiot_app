@@ -2243,6 +2243,11 @@ int id textView2 0x7f09019c
 int id textView3 0x7f09019d
 int id textView4 0x7f09019e
 int id textView5 0x7f0901d0
+int id textView6 0x7f0901d1
+int id textView7 0x7f0901d2
+int id textView8 0x7f0901d3
+int id textView9 0x7f0901d4
+int id textView910 0x7f0901d5
 int id text_input_end_icon 0x7f09019f
 int id text_input_start_icon 0x7f0901a0
 int id textinput_counter 0x7f0901a1
