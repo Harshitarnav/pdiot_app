@@ -19,19 +19,20 @@ import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.*
+import com.google.firebase.firestore.EventListener
 import com.specknet.pdiotapp.R
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.RESpeckLiveData
-import com.specknet.pdiotapp.utils.RESpeckPacketHandler.Companion.TAG
+import kotlinx.coroutines.tasks.await
 import org.tensorflow.lite.Interpreter
 import java.io.FileInputStream
 import java.io.IOException
+import java.io.PrintStream
 import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
 import java.util.*
+import kotlin.reflect.typeOf
 
 
 class RespeckPage : AppCompatActivity() {
@@ -152,30 +153,6 @@ class RespeckPage : AppCompatActivity() {
         setupCharts()
         initWindow(windowWidth)
 
-
-//      Testing block
-        userID = auth!!.currentUser!!.uid
-//        FirebaseDatabase.getInstance().reference.child("users").child(userID!!).child("Lying Down").setValue("200")
-        val docRef: DocumentReference = store!!.collection("users").document(userID!!)
-        docRef.get().addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                val document = task.result
-                val groupHash = document.getData() as Map<String, Any>
-                Log.i("test", groupHash.toString())
-
-                if (document != null) {
-                    for (x in groupHash) {
-//                        toString().split("=").toTypedArray().contentToString()
-                        val value: String = x.toString().substringAfterLast("=")
-                        val s = value.toInt()
-                        Log.i("Thist and ", s.toString())
-                        store!!.collection("users").document(userID!!)
-                            .update("Lying Down", s+100)
-                        Log.i("Thist and ", x.toString())
-                    }
-                }
-            }
-        }
         try {
             tflite = Interpreter(loadModelFile(model))
         } catch (e: java.lang.Exception) {
@@ -221,11 +198,8 @@ class RespeckPage : AppCompatActivity() {
                     data[3] = i
                     data[4] = j
                     data[5] = k
-//                    window.add(data)
 
                     // Call to function processing the data must be here
-                    // Normalize data
-
                     // Normalize data
                     val normData: FloatArray = normalizeData(data, RESPECK_MEANS, RESPECK_STDS)
 
@@ -234,13 +208,12 @@ class RespeckPage : AppCompatActivity() {
 
                     counter++
 
-                    if (predictFrequency==1) {
-//                        counter = 0
+                    if (predictFrequency==counter) {
+                        counter = 0
                         // Call to function processing the data must be here
                         Log.i("is it","causing problem")
                         inference(window)
                     }
-
                 }
             }
         }
@@ -264,25 +237,6 @@ class RespeckPage : AppCompatActivity() {
 
 
     fun setupCharts() {
-//        respeckChart = findViewById(R.id.respeck_chart)
-//
-//        output = findViewById<View>(R.id.output) as TextView
-//
-//        try {
-//            tflite = Interpreter(loadModelFile())
-//        } catch (e: Exception) {
-//            e.printStackTrace()
-//        }
-//        // Order for CNN
-//        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
-//        val data = FloatArray(6)
-
-//        try {
-//            tflite = Interpreter(loadModelFile(model))
-//        } catch (e: java.lang.Exception) {
-//            e.printStackTrace()
-//        }
-
         // Respeck
 
         time = 0f
@@ -347,9 +301,6 @@ class RespeckPage : AppCompatActivity() {
         }
     }
 
-
-
-
     override fun onDestroy() {
         super.onDestroy()
         unregisterReceiver(respeckLiveUpdateReceiver)
@@ -366,98 +317,6 @@ class RespeckPage : AppCompatActivity() {
         val declaredLength = fileDescriptor.declaredLength
         return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffSets, declaredLength)
     }
-
-//    fun getDataPoint(): FloatArray? {
-//
-//        // Order for CNN
-//        // [accelX, accelY, accelZ, gyroX, gyroY, gyroZ]
-//        val data = FloatArray(6)
-//
-//        // set up the broadcast receiver
-//        respeckLiveUpdateReceiver = object : BroadcastReceiver() {
-//            override fun onReceive(context: Context, intent: Intent) {
-//                Log.i("thread", "I am running on thread = " + Thread.currentThread().name)
-//                val action = intent.action
-//                if (action === Constants.ACTION_RESPECK_LIVE_BROADCAST) {
-//                    val liveData =
-//                        intent.getSerializableExtra(Constants.RESPECK_LIVE_DATA) as RESpeckLiveData?
-//                    Log.d("Live", "onReceive: liveData = $liveData")
-//
-//                    // get all relevant intent contents
-//                    data[0] = liveData!!.accelX
-//                    data[1] = liveData.accelY
-//                    data[2] = liveData.accelZ
-//                    val (x, y, z) = liveData.gyro
-//                    data[3] = x
-//                    data[4] = y
-//                    data[5] = z
-//                    window.remove()
-//                    window.add(data)
-//
-//                    // Call to function processing the data must be here
-//                    displayData(data)
-//                }
-//            }
-//        }
-//
-//        // register receiver on another thread
-//        val handlerThreadRespeck = HandlerThread("bgThreadRespeckLive")
-//        handlerThreadRespeck.start()
-//        looperRespeck = handlerThreadRespeck.looper
-//        val handlerRespeck = Handler(looperRespeck)
-//        this.registerReceiver(respeckLiveUpdateReceiver, filterTestRespeck, null, handlerRespeck)
-//        return data
-//    }
-
-//    fun displayData(data: FloatArray?) {
-//        inference(window)
-//    }
-
-//    fun inference(window: Queue<*>): Float {
-//        val inputValue = Array(1) {
-//            Array(50) {
-//                FloatArray(6)
-//            }
-//        }
-//        var idx = 0
-//        for (o in window) {
-//            inputValue[0][idx] = o as FloatArray
-//            idx++
-//        }
-//        val outputValue = Array(1) {
-//            FloatArray(
-//                14
-//            )
-//        }
-//        tflite!!.run(inputValue, outputValue)
-//        var maxValue = outputValue[0][0]
-//        var maxIndex = -1
-//        for (i in 0..13) {
-//            if (maxValue < outputValue[0][i]) {
-//                maxValue = outputValue[0][i]
-//                maxIndex = i
-//            }
-//        }
-//        if (maxIndex != -1) {
-//            val predictedLabel = labels[maxIndex]
-//            output.text = predictedLabel
-//
-//        }
-//        userID = auth!!.currentUser!!.uid
-//        val doc_ref = store!!.collection("users").document(userID!!)
-//        val user:HashMap<String,String> = HashMap<String,String>()
-//        user["Action"] = labels[maxIndex]
-//        user["Confidence"] = maxValue.toString()
-//
-//        doc_ref.set(user).addOnSuccessListener {
-//            Log.d(
-//                "TAG",
-//                "onSuccess: User profile created for user $userID"
-//            )
-//        }
-//
-//        return maxValue
-//    }
 
     fun inference(window: Queue<*>): Float {
         Log.i("is it","causing problem 1")
@@ -478,7 +337,6 @@ class RespeckPage : AppCompatActivity() {
                 classCount
             )
         }
-        Log.i("is it","causing problem 3")
         tflite!!.run(inputValue, outputValue)
         Log.i("is it","causing problem 4")
         var maxValue = outputValue[0][0]
@@ -495,34 +353,52 @@ class RespeckPage : AppCompatActivity() {
             val confidence = maxValue * 100
             val label = String.format("%.2f :: %s", confidence, predictedLabel)
             output.text = label
+            Log.i("hell", predictedLabel)
 
             userID = auth!!.currentUser!!.uid
-            val docRef: DocumentReference = store!!.collection("users").document(userID!!)
-            docRef.get().addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val document = task.result
-                    val groupHash = document.getData() as Map<String, Any>
-                    if (document != null) {
-                        for (x in groupHash) {
-                            if (x.toString() == predictedLabel) {
-                                val value: String = x.toString().substringAfterLast("=")
-                                val s = value.toInt()
-                                Log.i("Thist and ", s.toString())
-//                                store!!.collection("users").document(userID!!)
-//                                    .update("Lying Down", 100)
-                                Log.i("Thist and ", x.toString())
-                                store!!.collection("users").document(userID!!)
-                                    .update(predictedLabel, s + 2.5)
-                            }
-                        }
+            val act_val= mutableMapOf<String, Any>()
+            val doc_ref: DocumentReference = store!!.collection("users").document(userID!!)
+            doc_ref.addSnapshotListener(this, object : EventListener<DocumentSnapshot?> {
+                override fun onEvent(value: DocumentSnapshot?, error: FirebaseFirestoreException?) {
+                    assert(value != null)
+                    if (predictedLabel == "Lying Down") {
+                        val myLong: Double = value!!.getDouble("Lying Down") as Double
+                        act_val["Lying Down"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                        Log.i("hahaha1", act_val.toString())
+                    }
+                    else if (predictedLabel == "Running") {
+                        val myLong: Double = value!!.getDouble("Running") as Double
+                        act_val["Running"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                        Log.i("hahaha4", act_val.toString())
+                    }
+                    else if (predictedLabel == "Sitting,Standing") {
+                        val myLong: Double = value!!.getDouble("Sitting,Standing") as Double
+                        act_val["Sitting,Standing"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Stairs") {
+                        val myLong: Double = value!!.getDouble("Stairs") as Double
+                        act_val["Stairs"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Walking") {
+                        val myLong: Double = value!!.getDouble("Walking") as Double
+                        act_val["Walking"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
                     }
                 }
-            }
+            });
         }
         Log.i("is it","causing problem 6")
         return maxValue
     }
-
 }
 //                        val activity = document.getString("Lying Down")
 //                        if (activity == )

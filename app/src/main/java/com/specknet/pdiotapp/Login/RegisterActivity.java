@@ -74,12 +74,12 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "Registering User successful!", Toast.LENGTH_SHORT).show();
                     userID = auth.getCurrentUser().getUid();
                     DocumentReference doc_ref = store.collection("users").document(userID);
-                    Map<String, Integer> user = new DataStorage().getUserMap();
-                    user.put("Lying Down", 0);
-                    user.put("Running", 0);
-                    user.put("Sitting,Standing", 0);
-                    user.put("Stairs", 0);
-                    user.put("Walking", 0);
+                    Map<String, Double> user = new DataStorage().getUserMap();
+                    user.put("Lying Down", 0.0);
+                    user.put("Running", 0.0);
+                    user.put("Sitting,Standing", 0.0);
+                    user.put("Stairs", 0.0);
+                    user.put("Walking", 0.0);
 
                     doc_ref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -98,9 +98,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public class DataStorage {
-        private HashMap<String, Integer> user = new HashMap<String, Integer>();
+        private HashMap<String, Double> user = new HashMap<String, Double>();
 
-        public Map<String, Integer> getUserMap() {
+        public Map<String, Double> getUserMap() {
             return user;
         }
     }
