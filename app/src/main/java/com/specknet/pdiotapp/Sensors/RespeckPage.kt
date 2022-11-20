@@ -19,16 +19,20 @@ import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.specknet.pdiotapp.R
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.RESpeckLiveData
+import com.specknet.pdiotapp.utils.RESpeckPacketHandler.Companion.TAG
 import org.tensorflow.lite.Interpreter
 import java.io.FileInputStream
 import java.io.IOException
 import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
 import java.util.*
+
 
 class RespeckPage : AppCompatActivity() {
 
@@ -93,7 +97,6 @@ class RespeckPage : AppCompatActivity() {
         9.6897829f
     )
 
-
     var tflite: Interpreter? = null
 
     var window: Queue<FloatArray> = LinkedList()
@@ -149,6 +152,30 @@ class RespeckPage : AppCompatActivity() {
         setupCharts()
         initWindow(windowWidth)
 
+
+//      Testing block
+        userID = auth!!.currentUser!!.uid
+//        FirebaseDatabase.getInstance().reference.child("users").child(userID!!).child("Lying Down").setValue("200")
+        val docRef: DocumentReference = store!!.collection("users").document(userID!!)
+        docRef.get().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val document = task.result
+                val groupHash = document.getData() as Map<String, Any>
+                Log.i("test", groupHash.toString())
+
+                if (document != null) {
+                    for (x in groupHash) {
+//                        toString().split("=").toTypedArray().contentToString()
+                        val value: String = x.toString().substringAfterLast("=")
+                        val s = value.toInt()
+                        Log.i("Thist and ", s.toString())
+                        store!!.collection("users").document(userID!!)
+                            .update("Lying Down", s+100)
+                        Log.i("Thist and ", x.toString())
+                    }
+                }
+            }
+        }
         try {
             tflite = Interpreter(loadModelFile(model))
         } catch (e: java.lang.Exception) {
@@ -468,23 +495,96 @@ class RespeckPage : AppCompatActivity() {
             val confidence = maxValue * 100
             val label = String.format("%.2f :: %s", confidence, predictedLabel)
             output.text = label
-        }
 
-        userID = auth!!.currentUser!!.uid
-        val doc_ref = store!!.collection("users").document(userID!!)
-        val user:HashMap<String,String> = HashMap<String,String>()
-        user["Action"] = labels[maxIndex]
-        user["Confidence"] = maxValue.toString()
-
-        doc_ref.set(user).addOnSuccessListener {
-            Log.d(
-                "TAG",
-                "onSuccess: User profile created for user $userID"
-            )
+            userID = auth!!.currentUser!!.uid
+            val docRef: DocumentReference = store!!.collection("users").document(userID!!)
+            docRef.get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val document = task.result
+                    val groupHash = document.getData() as Map<String, Any>
+                    if (document != null) {
+                        for (x in groupHash) {
+                            if (x.toString() == predictedLabel) {
+                                val value: String = x.toString().substringAfterLast("=")
+                                val s = value.toInt()
+                                Log.i("Thist and ", s.toString())
+//                                store!!.collection("users").document(userID!!)
+//                                    .update("Lying Down", 100)
+                                Log.i("Thist and ", x.toString())
+                                store!!.collection("users").document(userID!!)
+                                    .update(predictedLabel, s + 2.5)
+                            }
+                        }
+                    }
+                }
+            }
         }
         Log.i("is it","causing problem 6")
         return maxValue
     }
 
 }
+//                        val activity = document.getString("Lying Down")
+//                        if (activity == )
+//                        Log.i("LOGGER", "First " + document.getString("first"))
+//                        Log.i("LOGGER", "Last " + document.getString("last"))
+//                        Log.i("LOGGER", "Born " + document.getString("born"))
+//                    } else {
+//                        Log.d("LOGGER", "No such document")
+//                    }
+//                } else {
+//                    Log.d("LOGGER", "get failed with ", task.exception)
+//                }
+//                    }
+
+//            if (predictedLabel == "Lying Down") {
+//            }
+//            }
+//                val doc_ref = store!!.collection("users").whereEqualTo(userID!!,true).get("Lying Down")
+//                val activity1 = doc_ref.getString()
+//                val activity:HashMap<String,String> = HashMap<String,String>()
+//                doc_ref["Lying Down"].set(activity).addOnSuccessListener {
+//                    Log.d(
+//                        "TAG",
+//                        "onSuccess: User profile created for user $userID"
+//                    )
+//                }
+//                doc_ref.get()
+//                    .addOnSuccessListener { activities ->
+//                        for (activity in activities) {
+//                            if (activity != null) {
+//                                if (activity.toString() == "Walking"){
+//                                    activity.set(predictedLabel, doc_ref.toString()+1)
+//                                }
+//                                Log.d(TAG, "DocumentSnapshot data: ${activity.data}")
+//                            } else {
+//                                Log.d(TAG, "No such document")
+//                            }
+//                        }
+//                    }
+//                    .addOnFailureListener { exception ->
+//                        Log.d(TAG, "get failed with ", exception)
+//                    }
+//
+//                store!!.collection("users").whereEqualTo(userID!!, true)
+//                .getDocuments() { (querySnapshot, err) in
+//                    if let err = err {
+//                        print("Error getting documents: \(err)")
+//                    } else {
+//                        self.events = querySnapshot!.documents.map { document in
+//                                return Event(eventName: (document.get("event_name") as? String) ?? "")
+//                        }
+//            }
+//
+//            user["Action"] = ESSENTIAL_5_LABELS[maxIndex]
+//            user["Confidence"] = maxValue.toString()
+//                }
+//
+//            }
+//        }
+//        Log.i("is it","causing problem 6")
+//        return maxValue
+//    }
+//
+//}
 

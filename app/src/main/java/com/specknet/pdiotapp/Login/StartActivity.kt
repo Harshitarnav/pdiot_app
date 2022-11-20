@@ -165,8 +165,6 @@ class StartActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        FirebaseDatabase.getInstance().reference.child("ProgrammingKnowledge").child("Android").setValue("abcd")
-
 //        classificationButton.setOnClickListener {
 //            val intent = Intent(this, ClassificationActivity::class.java)
 //            startActivity(intent)

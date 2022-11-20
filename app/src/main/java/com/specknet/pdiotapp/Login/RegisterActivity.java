@@ -18,7 +18,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.specknet.pdiotapp.R;
@@ -75,9 +74,12 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "Registering User successful!", Toast.LENGTH_SHORT).show();
                     userID = auth.getCurrentUser().getUid();
                     DocumentReference doc_ref = store.collection("users").document(userID);
-                    Map<String, Object> user = x.getUserMap();
-                    user.put("email", email);
-                    user.put("password", password);
+                    Map<String, Integer> user = new DataStorage().getUserMap();
+                    user.put("Lying Down", 0);
+                    user.put("Running", 0);
+                    user.put("Sitting/Standing", 0);
+                    user.put("Stairs", 0);
+                    user.put("Walking", 0);
 
                     doc_ref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -96,9 +98,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public class DataStorage {
-        private HashMap<String, Object> user = new HashMap<String, Object>();
+        private HashMap<String, Integer> user = new HashMap<String, Integer>();
 
-        public HashMap<String, Object> getUserMap() {
+        public Map<String, Integer> getUserMap() {
             return user;
         }
     }
