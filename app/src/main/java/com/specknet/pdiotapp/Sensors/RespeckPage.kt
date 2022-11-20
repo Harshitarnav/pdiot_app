@@ -57,7 +57,7 @@ class RespeckPage : AppCompatActivity() {
     val ESSENTIAL_5_LABELS = arrayOf(
         "Lying down",
         "Running",
-        "Sitting/Standing",
+        "Sitting,Standing",
         "Stairs",
         "Walking"
     )
@@ -366,14 +366,12 @@ class RespeckPage : AppCompatActivity() {
                         act_val["Lying Down"] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
-                        Log.i("hahaha1", act_val.toString())
                     }
                     else if (predictedLabel == "Running") {
                         val myLong: Double = value!!.getDouble("Running") as Double
                         act_val["Running"] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
-                        Log.i("hahaha4", act_val.toString())
                     }
                     else if (predictedLabel == "Sitting,Standing") {
                         val myLong: Double = value!!.getDouble("Sitting,Standing") as Double
