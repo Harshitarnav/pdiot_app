@@ -36,6 +36,14 @@
             android:id="@+id/respeck_chart"
             android:layout_width="match_parent"
             android:layout_height="200dp" />
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/respeck_graphs"
+            android:text="back"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
 
 

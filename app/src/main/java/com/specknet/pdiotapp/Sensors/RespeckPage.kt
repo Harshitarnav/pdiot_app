@@ -1,5 +1,6 @@
 package com.specknet.pdiotapp.Sensors
 
+import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -10,6 +11,7 @@ import android.os.HandlerThread
 import android.os.Looper
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -21,6 +23,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.*
 import com.google.firebase.firestore.EventListener
+import com.specknet.pdiotapp.Login.StartActivity
 import com.specknet.pdiotapp.R
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.RESpeckLiveData
@@ -137,12 +140,15 @@ class RespeckPage : AppCompatActivity() {
     var predictFrequency = 1
     var counter = 0
 
+    lateinit var backbtn: Button
 
     val filterTestRespeck = IntentFilter(Constants.ACTION_RESPECK_LIVE_BROADCAST)
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_respeck_page)
+        backbtn = findViewById(R.id.backbtn)
 
         respeckChart = findViewById(R.id.respeck_chart)
         output = findViewById<View>(R.id.output) as TextView
@@ -225,6 +231,9 @@ class RespeckPage : AppCompatActivity() {
         val handlerRespeck = Handler(looperRespeck)
         this.registerReceiver(respeckLiveUpdateReceiver, filterTestRespeck, null, handlerRespeck)
 
+        backbtn.setOnClickListener(){
+            startActivity(Intent(this, StartActivity::class.java))
+        }
     }
 
     private fun normalizeData(data: FloatArray, means: FloatArray, stds: FloatArray): FloatArray {
