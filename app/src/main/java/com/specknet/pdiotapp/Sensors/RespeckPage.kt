@@ -133,10 +133,12 @@ class RespeckPage : AppCompatActivity() {
 
 //    private var liveData: RESpeckLiveData? = null
 
-    var model = "respeck_lstm_essential5.tflite"
-    var classCount = 5
+    var model = "respeck_cnn-lstm_14.tflite"
+//    var classCount = 5
+    var classCount = 14
     var featureCount = 6
-    var windowWidth = 50
+//    var windowWidth = 50
+    var windowWidth = 64
     var predictFrequency = 1
     var counter = 0
 
@@ -319,7 +321,7 @@ class RespeckPage : AppCompatActivity() {
 
     @Throws(IOException::class)
     private fun loadModelFile(model: String): MappedByteBuffer {
-        val fileDescriptor = this.assets.openFd("respeck_lstm_essential5.tflite")
+        val fileDescriptor = this.assets.openFd("respeck_cnn-lstm_14.tflite")
         val fileInputStream = FileInputStream(fileDescriptor.fileDescriptor)
         val fileChannel = fileInputStream.channel
         val startOffSets = fileDescriptor.startOffset
@@ -358,7 +360,7 @@ class RespeckPage : AppCompatActivity() {
         }
         Log.i("is it","causing problem5")
         if (maxIndex != -1) {
-            val predictedLabel = ESSENTIAL_5_LABELS[maxIndex]
+            val predictedLabel = labels[maxIndex]
             val confidence = maxValue * 100
             val label = String.format("%.2f :: %s", confidence, predictedLabel)
             output.text = label
@@ -370,9 +372,84 @@ class RespeckPage : AppCompatActivity() {
             doc_ref.addSnapshotListener(this, object : EventListener<DocumentSnapshot?> {
                 override fun onEvent(value: DocumentSnapshot?, error: FirebaseFirestoreException?) {
                     assert(value != null)
-                    if (predictedLabel == "Lying Down") {
-                        val myLong: Double = value!!.getDouble("Lying Down") as Double
-                        act_val["Lying Down"] = (myLong + 2.5)
+//                    if (predictedLabel == "Lying Down") {
+//                        val myLong: Double = value!!.getDouble("Lying Down") as Double
+//                        act_val["Lying Down"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    }
+//                    else if (predictedLabel == "Running") {
+//                        val myLong: Double = value!!.getDouble("Running") as Double
+//                        act_val["Running"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    }
+//                    else if (predictedLabel == "Sitting,Standing") {
+//                        val myLong: Double = value!!.getDouble("Sitting,Standing") as Double
+//                        act_val["Sitting,Standing"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    }
+//                    else if (predictedLabel == "Stairs") {
+//                        val myLong: Double = value!!.getDouble("Stairs") as Double
+//                        act_val["Stairs"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    }
+//                    else if (predictedLabel == "Walking") {
+//                        val myLong: Double = value!!.getDouble("Walking") as Double
+//                        act_val["Walking"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    }
+
+
+
+                    if (predictedLabel == "Climbing stairs") {
+                        val myLong: Double = value!!.getDouble("Climbing stairs") as Double
+                        act_val["Climbing stairs"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Descending stairs") {
+                        val myLong: Double? = value!!.getDouble("Descending stairs") as Double
+                        act_val["Descending stairs"] = (myLong!! + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Desk work") {
+                        val myLong: Double? = value!!.getDouble("Desk work") as Double
+                        act_val["Desk work"] = (myLong!! + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Lying down left") {
+                        val myLong: Double? = value!!.getDouble("Lying down left") as Double
+                        act_val["Lying down left"] = (myLong!! + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Lying down on back") {
+                        val myLong: Double? = value!!.getDouble("Lying down on back") as Double
+                        act_val["Lying down on back"] = (myLong!! + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Lying down on stomach") {
+                        val myLong: Double? = value!!.getDouble("Lying down on stomach") as Double
+                        act_val["Lying down on stomach"] = (myLong!! + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Lying down right") {
+                        val myLong: Double = value!!.getDouble("Lying down right") as Double
+                        act_val["Lying down right"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Movement") {
+                        val myLong: Double = value!!.getDouble("Movement") as Double
+                        act_val["Movement"] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
                     }
@@ -382,21 +459,33 @@ class RespeckPage : AppCompatActivity() {
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
                     }
-                    else if (predictedLabel == "Sitting,Standing") {
-                        val myLong: Double = value!!.getDouble("Sitting,Standing") as Double
-                        act_val["Sitting,Standing"] = (myLong + 2.5)
+                    else if (predictedLabel == "Sitting") {
+                        val myLong: Double = value!!.getDouble("Sitting") as Double
+                        act_val["Sitting"] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
                     }
-                    else if (predictedLabel == "Stairs") {
-                        val myLong: Double = value!!.getDouble("Stairs") as Double
-                        act_val["Stairs"] = (myLong + 2.5)
+                    else if (predictedLabel == "Sitting bent backward") {
+                        val myLong: Double = value!!.getDouble("Sitting bent backward") as Double
+                        act_val["Sitting bent backward"] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
                     }
-                    else if (predictedLabel == "Walking") {
-                        val myLong: Double = value!!.getDouble("Walking") as Double
-                        act_val["Walking"] = (myLong + 2.5)
+                    else if (predictedLabel == "Sitting bent forward") {
+                        val myLong: Double = value!!.getDouble("Sitting bent forward") as Double
+                        act_val["Sitting bent forward"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Standing") {
+                        val myLong: Double = value!!.getDouble("Standing") as Double
+                        act_val["Standing"] = (myLong + 2.5)
+                        store!!.collection("users").document(userID!!)
+                            .set(act_val, SetOptions.merge())
+                    }
+                    else if (predictedLabel == "Walking at normal speed") {
+                        val myLong: Double = value!!.getDouble("Walking at normal speed") as Double
+                        act_val["Walking at normal speed"] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
                     }
