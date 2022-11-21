@@ -1,6 +1,7 @@
 package com.specknet.pdiotapp.Login
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
@@ -57,6 +58,7 @@ class StartActivity : AppCompatActivity() {
 
     var isUserFirstTime = false
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

@@ -6,15 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="192dp"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="562dp"
+        android:background="@drawable/ic_login_bg_shape"
+        android:gravity="center_vertical"
+        android:text="         LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="219dp"
         android:layout_height="36dp"
-        android:layout_alignBottom="@+id/register"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="100px"
-        android:layout_marginBottom="106dp"
-        android:text="New here? Register here"
+        android:layout_marginTop="447dp"
+        android:text="New here? Click REGISTER!"
+        android:textColor="#808080"
         app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,34 +45,79 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="171dp"
-        android:hint="Email" />
+        android:layout_marginTop="204dp"
+        android:hint="Email"
+        android:minHeight="48dp" />
 
-    <EditText
-        android:id="@+id/password"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="104dp"
+        android:gravity="center"
+        android:text="Start taking care of yourself today."
+        android:textColor="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="242dp"
-        android:hint="Password" />
+        android:layout_marginTop="265dp"
+        android:layout_marginBottom="24dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="242dp"
+            android:drawablePadding="12dp"
+            android:hint="Password"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/passwordd"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginTop="242dp"-->
+    <!--        android:hint="Password" />-->
 
     <Button
         android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/password"
-        android:layout_marginTop="99dp"
-        android:layout_marginBottom="-274dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/ic_button"
         android:text="REGISTER"
-        android:background="@android:color/white"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@id/login" />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/register"
-        android:layout_marginTop="-193dp"
-        android:text="login" />
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/ic_button"
+        android:text="login"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

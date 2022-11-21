@@ -16,6 +16,10 @@
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_on_boarding.xml"
     },
     {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_login_bg_shape.xml.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_login_bg_shape.xml"
+    },
+    {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/menu_menu_pager.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/menu/menu_pager.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_live_data_icon.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_live_data_icon.xml"
+    },
+    {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_button.xml.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_button.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_bluetooth_icon.xml.flat",
@@ -110,6 +118,10 @@
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_button_logout.xml.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_button_logout.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_indicator_selected.xml.flat",
