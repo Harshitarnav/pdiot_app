@@ -367,6 +367,7 @@ class RespeckPage : AppCompatActivity() {
             Log.i("hell", predictedLabel)
 
             userID = auth!!.currentUser!!.uid
+            Log.i("bhakbhosdike", userID.toString())
             val act_val= mutableMapOf<String, Any>()
             val doc_ref: DocumentReference = store!!.collection("users").document(userID!!)
             doc_ref.addSnapshotListener(this, object : EventListener<DocumentSnapshot?> {

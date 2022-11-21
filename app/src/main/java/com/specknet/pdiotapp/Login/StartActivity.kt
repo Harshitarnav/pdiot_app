@@ -142,8 +142,6 @@ class StartActivity : AppCompatActivity() {
         }
     }
 
-
-
     fun setupClickListeners() {
         retrieveButton.setOnClickListener {
             val intent = Intent(this, RetrieveActivity::class.java)

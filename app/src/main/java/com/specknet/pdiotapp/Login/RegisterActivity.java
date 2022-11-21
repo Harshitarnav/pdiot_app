@@ -20,6 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.specknet.pdiotapp.MainActivity;
 import com.specknet.pdiotapp.R;
 
 import java.util.HashMap;
@@ -119,7 +120,7 @@ public class RegisterActivity extends AppCompatActivity {
                             Log.d("TAG", "onSuccess: User profile created for user "+ userID);
                         }
                     });
-                    Intent intent = new Intent(RegisterActivity.this, StartActivity.class);
+                    Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
