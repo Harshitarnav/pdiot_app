@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "/Users/zhouyi/pdiot_app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/3e557f5b808785295977cd0644a2c462/transformed/material-1.2.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/3e557f5b808785295977cd0644a2c462/transformed/material-1.2.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

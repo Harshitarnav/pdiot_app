@@ -1,166 +1,174 @@
 [
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_vec_wireless_active.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/vec_wireless_active.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_retrieve.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_retrieve.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_respeck_page.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_respeck_page.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_fragment_on_boarding.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/fragment_on_boarding.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_main1.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_main1.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_on_boarding.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_on_boarding.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/menu_menu_main.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/menu/menu_main.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_login_bg_shape.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_login_bg_shape.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_retrieve.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_retrieve.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/menu_menu_pager.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/menu/menu_pager.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_fragment_on_boarding.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/fragment_on_boarding.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_on_boarding.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_on_boarding.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_recording.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_recording.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_live_data.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_live_data.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_chevron_right.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_chevron_right.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_live_data_icon.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_live_data_icon.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_button.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_button.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_bluetooth_icon.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_bluetooth_icon.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_classification.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_classification.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_recording.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_recording.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_barcode.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_barcode.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_ret_time.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_ret_time.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_ret_activity.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_ret_activity.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_thingy_page.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_thingy_page.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_indicator_unselected.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/indicator_unselected.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_chevron_right.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_chevron_right.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_login.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_bluetooth_icon.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_bluetooth_icon.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_start.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_start.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_register.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_start.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_start.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_vec_wireless_active.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/vec_wireless_active.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/menu_menu_main.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/menu/menu_main.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_connecting.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_connecting.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_button_logout.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_button_logout.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_indicator_selected.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/indicator_selected.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_indicator_selected.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/indicator_selected.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_recording_icon.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_recording_icon.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_login_bg_shape.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_login_bg_shape.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_button.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_button.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_live_data.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_live_data.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_main1.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_main1.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_barcode.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_barcode.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_indicator_unselected.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/indicator_unselected.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_live_data_icon.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_live_data_icon.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_respeck_page.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_respeck_page.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_button_logout.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_button_logout.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_classification.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_classification.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/layout_activity_thingy_page.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/layout/activity_thingy_page.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_connecting.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_connecting.xml"
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/menu_menu_pager.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/menu/menu_pager.xml"
+    },
+    {
+        "merged": "/Users/zhouyi/pdiot_app/app/build/intermediates/merged_res/debug/drawable_ic_recording_icon.xml.flat",
+        "source": "/Users/zhouyi/pdiot_app/app/src/main/res/drawable/ic_recording_icon.xml"
     }
 ]

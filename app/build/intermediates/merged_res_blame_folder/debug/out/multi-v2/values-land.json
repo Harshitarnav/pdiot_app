@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/zhouyi/pdiot_app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/9526ddb40c7c6f7ca23fd0b39ccd7125/transformed/mediarouter-1.0.0-alpha5/res/values-land/values-land.xml",
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/9526ddb40c7c6f7ca23fd0b39ccd7125/transformed/mediarouter-1.0.0-alpha5/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/4db106591f5436da673b7f98e21989c9/transformed/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/4db106591f5436da673b7f98e21989c9/transformed/appcompat-1.1.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/3e557f5b808785295977cd0644a2c462/transformed/material-1.2.0/res/values-land/values-land.xml",
+                    "source": "/Users/zhouyi/.gradle/caches/transforms-3/3e557f5b808785295977cd0644a2c462/transformed/material-1.2.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
