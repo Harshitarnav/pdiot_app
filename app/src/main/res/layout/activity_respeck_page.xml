@@ -8,21 +8,29 @@
 
     <TextView
         android:id="@+id/output"
-        android:layout_width="360dp"
-        android:layout_height="47dp"
+        android:layout_width="290dp"
+        android:layout_height="95dp"
+        android:background="#7393B3"
+        android:gravity="center_vertical|center_horizontal"
         android:text="Confidence Level: Activity"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="77dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/respeck_graphs"
-        android:layout_width="392dp"
-        android:layout_height="544dp"
+        android:layout_width="370dp"
+        android:layout_height="475dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/output"
         app:layout_constraintVertical_bias="1.0">
@@ -30,7 +38,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Respeck Live Data" />
+            android:text="Respeck Live Data"
+            android:textColor="#7393B3"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/respeck_chart"
@@ -42,7 +53,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/respeck_graphs"
+            android:background="#7393B3"
             android:text="back"
+            android:textColor="#FFFFFF"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
 
