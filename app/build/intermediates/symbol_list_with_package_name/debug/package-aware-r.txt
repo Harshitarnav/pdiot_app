@@ -1770,6 +1770,8 @@ drawable ic_plusone_small_off_client
 drawable ic_plusone_standard_off_client
 drawable ic_plusone_tall_off_client
 drawable ic_recording_icon
+drawable ic_ret_activity
+drawable ic_ret_time
 drawable ic_vol_type_speaker_dark
 drawable ic_vol_type_speaker_group_dark
 drawable ic_vol_type_speaker_group_light
@@ -1954,6 +1956,7 @@ id compute_button
 id confirm_button
 id connect_sensors_button
 id constraintLayout
+id constraintLayout2
 id container
 id content
 id contentPanel
@@ -2009,6 +2012,7 @@ id grayscale
 id group_divider
 id groups
 id guest
+id guideline
 id hideable
 id holo_dark
 id holo_light
@@ -2277,7 +2281,6 @@ id textView6
 id textView7
 id textView8
 id textView9
-id textView910
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter

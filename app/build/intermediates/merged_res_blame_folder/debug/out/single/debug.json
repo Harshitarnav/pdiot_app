@@ -80,6 +80,10 @@
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_ret_time.xml.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_ret_time.xml"
+    },
+    {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_login.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_live_data.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_live_data.xml"
+    },
+    {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_ret_activity.xml.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_ret_activity.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_main1.xml.flat",

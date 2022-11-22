@@ -3,31 +3,14 @@ com/specknet/pdiotapp/utils/Constants.java
  com.specknet.pdiotapp.utils.Constants$1
  com.specknet.pdiotapp.utils.Constants$2
  com.specknet.pdiotapp.utils.Constants$Config
-com/specknet/pdiotapp/utils/Utils.java
- com.specknet.pdiotapp.utils.Utils
-com/specknet/pdiotapp/BuildConfig.java
- com.specknet.pdiotapp.BuildConfig
-com/specknet/pdiotapp/utils/RESpeckStoredSample.java
- com.specknet.pdiotapp.utils.RESpeckStoredSample
-com/specknet/pdiotapp/utils/CountUpTimer.java
- com.specknet.pdiotapp.utils.CountUpTimer
- com.specknet.pdiotapp.utils.CountUpTimer$1
 com/specknet/pdiotapp/classification/ClassificationActivity.java
  com.specknet.pdiotapp.classification.ClassificationActivity
  com.specknet.pdiotapp.classification.ClassificationActivity$1
-com/specknet/pdiotapp/Login/RegisterActivity.java
- com.specknet.pdiotapp.Login.RegisterActivity
- com.specknet.pdiotapp.Login.RegisterActivity$1
- com.specknet.pdiotapp.Login.RegisterActivity$2
- com.specknet.pdiotapp.Login.RegisterActivity$2$1
- com.specknet.pdiotapp.Login.RegisterActivity$DataStorage
-com/specknet/pdiotapp/MainActivity.java
- com.specknet.pdiotapp.MainActivity
- com.specknet.pdiotapp.MainActivity$1
- com.specknet.pdiotapp.MainActivity$2
- com.specknet.pdiotapp.MainActivity$3
- com.specknet.pdiotapp.MainActivity$4
- com.specknet.pdiotapp.MainActivity$5
+com/specknet/pdiotapp/BuildConfig.java
+ com.specknet.pdiotapp.BuildConfig
+com/specknet/pdiotapp/retrieve/RetrieveActivity.java
+ com.specknet.pdiotapp.retrieve.RetrieveActivity
+ com.specknet.pdiotapp.retrieve.RetrieveActivity$1
 com/specknet/pdiotapp/bluetooth/BluetoothSpeckService.java
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$1
@@ -39,6 +22,23 @@ com/specknet/pdiotapp/bluetooth/BluetoothSpeckService.java
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$7
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$8
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$9
-com/specknet/pdiotapp/retrieve/RetrieveActivity.java
- com.specknet.pdiotapp.retrieve.RetrieveActivity
- com.specknet.pdiotapp.retrieve.RetrieveActivity$1
+com/specknet/pdiotapp/utils/Utils.java
+ com.specknet.pdiotapp.utils.Utils
+com/specknet/pdiotapp/utils/RESpeckStoredSample.java
+ com.specknet.pdiotapp.utils.RESpeckStoredSample
+com/specknet/pdiotapp/Login/RegisterActivity.java
+ com.specknet.pdiotapp.Login.RegisterActivity
+ com.specknet.pdiotapp.Login.RegisterActivity$1
+ com.specknet.pdiotapp.Login.RegisterActivity$2
+ com.specknet.pdiotapp.Login.RegisterActivity$2$1
+ com.specknet.pdiotapp.Login.RegisterActivity$DataStorage
+com/specknet/pdiotapp/utils/CountUpTimer.java
+ com.specknet.pdiotapp.utils.CountUpTimer
+ com.specknet.pdiotapp.utils.CountUpTimer$1
+com/specknet/pdiotapp/MainActivity.java
+ com.specknet.pdiotapp.MainActivity
+ com.specknet.pdiotapp.MainActivity$1
+ com.specknet.pdiotapp.MainActivity$2
+ com.specknet.pdiotapp.MainActivity$3
+ com.specknet.pdiotapp.MainActivity$4
+ com.specknet.pdiotapp.MainActivity$5
