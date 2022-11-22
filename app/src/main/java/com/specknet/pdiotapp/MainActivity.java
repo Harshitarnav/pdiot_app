@@ -1,5 +1,6 @@
 package com.specknet.pdiotapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -10,10 +11,12 @@ import android.content.Intent;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.polidea.rxandroidble2.RxBleConnection;
 import com.specknet.pdiotapp.login.RegisterActivity;
 import com.specknet.pdiotapp.login.StartActivity;
 
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "User Registered!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
@@ -65,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String txt_email = "guest@gmail.com";
+//                String txt_email = "guest@gmail.com"; //for 14 classes
+                String txt_email = "guest5@gmail.com"; //for 5 classes
+//                String txt_email = "guest4@gmail.com"; //for 4 classes
                 String txt_password = "12345678";
                 loginGuestUser(txt_email, txt_password);
             }
@@ -81,6 +87,13 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, StartActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        auth.signInWithEmailAndPassword(email, password).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(MainActivity.this, "Wrong Credentials!", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -76,12 +76,12 @@ public class RegisterActivity extends AppCompatActivity {
                     userID = auth.getCurrentUser().getUid();
                     DocumentReference doc_ref = store.collection("users").document(userID);
                     Map<String, Double> user = x.getUserMap();
-
-//                    user.put("Lying Down", 0.0);
-//                    user.put("Running", 0.0);
-//                    user.put("Sitting,Standing", 0.0);
-//                    user.put("Stairs", 0.0);
-//                    user.put("Walking", 0.0);
+                    // for a class of 5
+                    user.put("Lying down", 0.0);
+                    user.put("Running", 0.0);
+                    user.put("Sitting,Standing", 0.0);
+                    user.put("Stairs", 0.0);
+                    user.put("Walking", 0.0);
 
 //                    "Climbing stairs",
 //                            "Descending stairs",
@@ -97,21 +97,27 @@ public class RegisterActivity extends AppCompatActivity {
 //                            "Sitting bent forward",
 //                            "Standing",
 //                            "Walking at normal speed"
+//                    // for a class of 14
+//                    user.put("Climbing stairs", 0.0);
+//                    user.put("Descending stairs", 0.0);
+//                    user.put("Desk work", 0.0);
+//                    user.put("Lying down left", 0.0);
+//                    user.put("Lying down on back", 0.0);
+//                    user.put("Lying down on stomach", 0.0);
+//                    user.put("Lying down right", 0.0);
+//                    user.put("Movement", 0.0);
+//                    user.put("Running", 0.0);
+//                    user.put("Sitting", 0.0);
+//                    user.put("Sitting bent backward", 0.0);
+//                    user.put("Sitting bent forward", 0.0);
+//                    user.put("Standing", 0.0);
+//                    user.put("Walking at normal speed", 0.0);
 
-                    user.put("Climbing stairs", 0.0);
-                    user.put("Descending stairs", 0.0);
-                    user.put("Desk work", 0.0);
-                    user.put("Lying down left", 0.0);
-                    user.put("Lying down on back", 0.0);
-                    user.put("Lying down on stomach", 0.0);
-                    user.put("Lying down right", 0.0);
-                    user.put("Movement", 0.0);
-                    user.put("Running", 0.0);
-                    user.put("Sitting", 0.0);
-                    user.put("Sitting bent backward", 0.0);
-                    user.put("Sitting bent forward", 0.0);
-                    user.put("Standing", 0.0);
-                    user.put("Walking at normal speed", 0.0);
+//                    //for a class of 4
+//                    user.put("Lying down", 0.0);
+//                    user.put("Running", 0.0);
+//                    user.put("Sitting,Standing", 0.0);
+//                    user.put("Walking", 0.0);
 
 
                     doc_ref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {

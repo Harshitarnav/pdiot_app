@@ -1831,6 +1831,7 @@ int drawable notification_tile_bg 0x7f08017d
 int drawable notify_panel_notification_icon_bg 0x7f08017e
 int drawable powered_by_google_dark 0x7f08017f
 int drawable powered_by_google_light 0x7f080180
+int drawable respeck_placement 0x7f080185
 int drawable test_custom_background 0x7f080181
 int drawable tooltip_frame_dark 0x7f080182
 int drawable tooltip_frame_light 0x7f080183

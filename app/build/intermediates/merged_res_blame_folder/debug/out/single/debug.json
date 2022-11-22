@@ -16,6 +16,10 @@
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_on_boarding.xml"
     },
     {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_respeck_placement.png.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/respeck_placement.png"
+    },
+    {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_login_bg_shape.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_login_bg_shape.xml"
     },
