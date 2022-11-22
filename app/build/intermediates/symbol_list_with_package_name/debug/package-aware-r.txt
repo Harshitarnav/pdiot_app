@@ -1778,6 +1778,7 @@ drawable ic_vol_type_speaker_group_light
 drawable ic_vol_type_speaker_light
 drawable ic_vol_type_tv_dark
 drawable ic_vol_type_tv_light
+drawable img
 drawable indicator_selected
 drawable indicator_unselected
 drawable material_ic_calendar_black_24dp
@@ -2041,6 +2042,7 @@ id left
 id light
 id line1
 id line3
+id linear_layout
 id listMode
 id list_item
 id login
@@ -2470,6 +2472,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout notification
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -2584,6 +2587,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fcm_fallback_notification_channel_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
