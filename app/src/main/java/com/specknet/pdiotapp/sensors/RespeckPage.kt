@@ -46,6 +46,24 @@ class RespeckPage : AppCompatActivity() {
         "Walking"
     )
 
+    val RESPECK_MEANS = floatArrayOf(
+        -0.02206804f,
+        -0.64659745f,
+        0.03289176f,
+        0.12822682f,
+        0.09448824f,
+        -0.04363118f
+    )
+
+    val RESPECK_STDS = floatArrayOf(
+        0.43048498f,
+        0.49491601f,
+        0.5036586f,
+        14.27410881f,
+        17.39951753f,
+        9.6897829f
+    )
+
     var tflite: Interpreter? = null
 
     var window: Queue<FloatArray> = LinkedList()
@@ -78,7 +96,7 @@ class RespeckPage : AppCompatActivity() {
 
 //    private var liveData: RESpeckLiveData? = null
 
-    var model = "respeck_lstm_essential5_64_n_9632.tflite"
+    var model = "respeck_lstm_essential5.tflite"
     var classCount = 5
 //    var classCount = 14
     var featureCount = 6
@@ -154,10 +172,10 @@ class RespeckPage : AppCompatActivity() {
 
                     // Call to function processing the data must be here
                     // Normalize data
-//                    val normData: FloatArray = normalizeData(data, RESPECK_MEANS, RESPECK_STDS)
+                    val normData: FloatArray = normalizeData(data, RESPECK_MEANS, RESPECK_STDS)
 
                     window.remove()
-                    window.add(data)
+                    window.add(normData)
 
 //                    counter++
 
@@ -182,13 +200,13 @@ class RespeckPage : AppCompatActivity() {
         }
     }
 
-//    private fun normalizeData(data: FloatArray, means: FloatArray, stds: FloatArray): FloatArray {
-//        val normData = FloatArray(featureCount)
-//        for (i in 0 until featureCount) {
-//            normData[i] = (data[i] - means[i]) / stds[i]
-//        }
-//        return normData
-//    }
+    private fun normalizeData(data: FloatArray, means: FloatArray, stds: FloatArray): FloatArray {
+        val normData = FloatArray(featureCount)
+        for (i in 0 until featureCount) {
+            normData[i] = (data[i] - means[i]) / stds[i]
+        }
+        return normData
+    }
 
 
     fun setupCharts() {
@@ -275,19 +293,16 @@ class RespeckPage : AppCompatActivity() {
     }
 
     fun inference(window: Queue<*>): Float {
-        Log.i("is it","causing problem 1")
         val inputValue = Array(1) {
             Array(windowWidth) {
                 FloatArray(featureCount)
             }
         }
-        Log.i("is it","causing problem 2")
         var idx = 0
         for (o in window) {
             inputValue[0][idx] = o as FloatArray
             idx++
         }
-        Log.i("is it","causing problem 3")
         val outputValue = Array(1) {
             FloatArray(
                 classCount
