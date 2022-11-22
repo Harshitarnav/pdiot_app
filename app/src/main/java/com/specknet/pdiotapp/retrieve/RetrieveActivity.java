@@ -1,7 +1,6 @@
 package com.specknet.pdiotapp.retrieve;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -14,10 +13,6 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.specknet.pdiotapp.R;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
 
 public class RetrieveActivity extends AppCompatActivity {
     TextView lying, run, sit, stair, walk;

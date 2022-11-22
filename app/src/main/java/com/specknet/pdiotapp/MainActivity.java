@@ -14,9 +14,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.auth.User;
-import com.specknet.pdiotapp.Login.RegisterActivity;
-import com.specknet.pdiotapp.Login.StartActivity;
+import com.specknet.pdiotapp.login.RegisterActivity;
+import com.specknet.pdiotapp.login.StartActivity;
 
 public class MainActivity extends AppCompatActivity {
 

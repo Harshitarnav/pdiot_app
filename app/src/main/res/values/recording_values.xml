@@ -2,7 +2,6 @@
 <resources>
     <string-array name="sensor_type_array">
         <item>Respeck</item>
-        <item>Thingy</item>
     </string-array>
 
     <string-array name="activity_type_array">

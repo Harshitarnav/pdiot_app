@@ -15,6 +15,7 @@ import androidx.viewpager.widget.ViewPager
 import com.specknet.pdiotapp.R
 import com.specknet.pdiotapp.ui.main.SectionsPagerAdapter
 
+@Suppress("DEPRECATED_IDENTITY_EQUALS")
 class OnBoardingActivity : AppCompatActivity() {
 
     lateinit var mSectionsPagerAdapter: SectionsPagerAdapter
@@ -28,10 +29,7 @@ class OnBoardingActivity : AppCompatActivity() {
     private lateinit var two: ImageView
     private lateinit var indicators: Array<ImageView>
 
-    private var lastLeftValue = 0
-
     private lateinit var mCoordinator: CoordinatorLayout
-    private val TAG = "PagerActivity"
 
     private var page = 0 // to track page position
 

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
-INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
-INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
-INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
+INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
+INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
+INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/arnav/.gradle/caches/transforms-3/93145a41324047d504271dac19a537dc/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-messaging-ktx:23.1.0] /Users/arnav/.gradle/caches/transforms-3/60e55f36c5249ce16a007b5affa73c6d/transformed/jetified-firebase-messaging-ktx-23.1.0/AndroidManifest.xml:17:1-34:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/arnav/.gradle/caches/transforms-3/a2e8f5cc0d58bdacb0a8052dcc5d16ad/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:2:1-20:12
@@ -109,22 +109,22 @@ MERGED from [io.grpc:grpc-android:1.48.1] /Users/arnav/.gradle/caches/transforms
 MERGED from [com.artemzin.rxjava:proguard-rules:1.2.10.0] /Users/arnav/.gradle/caches/transforms-3/0e3f594ab5e2af15a27e25c9cc592da3/transformed/jetified-proguard-rules-1.2.10.0/AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/arnav/.gradle/caches/transforms-3/5a4bc353bd249db7ee8c9dfdb2fffdb8/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/arnav/.gradle/caches/transforms-3/e046470e843933656c55133a24567819/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
-INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
-INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
+INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
+INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
+INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
 	package
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:4:5-36
 		INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
 		INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-175:12
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:1-119:12
 		INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:2:11-69
@@ -213,7 +213,7 @@ ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:20:19-57
 application
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:22:5-173:19
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:22:5-117:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/arnav/.gradle/caches/transforms-3/93145a41324047d504271dac19a537dc/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/arnav/.gradle/caches/transforms-3/93145a41324047d504271dac19a537dc/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-messaging-ktx:23.1.0] /Users/arnav/.gradle/caches/transforms-3/60e55f36c5249ce16a007b5affa73c6d/transformed/jetified-firebase-messaging-ktx-23.1.0/AndroidManifest.xml:24:5-32:19
@@ -342,178 +342,140 @@ ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:39:13-50
 	android:name
 		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:38:13-84
-activity#com.specknet.pdiotapp.classification.ClassificationActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:41:9-47:20
-	android:exported
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:43:13-37
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:42:13-66
-meta-data#android.app.lib_name
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:44:13-46:36
-	android:value
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:46:17-33
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:45:17-52
 service#com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:49:9-52:39
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:41:9-44:39
 	android:enabled
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:51:13-35
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:43:13-35
 	android:exported
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:52:13-36
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:50:13-60
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:42:13-60
 service#com.specknet.pdiotapp.MyFirebaseMessagingService
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:54:9-61:19
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:46:9-53:19
 	android:exported
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:56:13-37
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:48:13-37
 	tools:ignore
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:57:13-55
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:49:13-55
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:55:13-55
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:47:13-55
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:58:13-60:29
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:50:13-52:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:59:17-78
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:51:17-78
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:59:25-75
-activity#com.specknet.pdiotapp.live.LiveDataActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:63:9-81:20
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:51:25-75
+activity#com.specknet.pdiotapp.sensors.RespeckPage
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:55:9-74:20
 	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:65:13-49
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:64:13-50
-intent-filter#action:name:com.specknet.respeck.RESPECK_LIVE_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:66:13-68:29
-action#com.specknet.respeck.RESPECK_LIVE_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:67:17-86
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:67:25-83
-intent-filter#action:name:com.specknet.respeck.ACTION_RESPECK_LIVE_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:69:13-71:29
-action#com.specknet.respeck.ACTION_RESPECK_LIVE_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:70:17-93
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:70:25-90
-intent-filter#action:name:com.specknet.respeck.ACTION_RESPECK_REHAB_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:72:13-74:29
-action#com.specknet.respeck.ACTION_RESPECK_REHAB_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:73:17-94
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:73:25-91
-intent-filter#action:name:com.specknet.respeck.RESPECK_REHAB_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:75:13-77:29
-action#com.specknet.respeck.RESPECK_REHAB_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:76:17-87
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:76:25-84
-intent-filter#action:name:com.specknet.pdiotapp.RESPECK_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:78:13-80:29
-action#com.specknet.pdiotapp.RESPECK_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:79:17-82
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:79:25-79
-activity#com.specknet.pdiotapp.Sensors.RespeckPage
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:83:9-101:20
-	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:85:13-49
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:84:13-48
-activity#com.specknet.pdiotapp.Sensors.ThingyPage
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:103:9-121:20
-	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:105:13-49
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:104:13-47
-activity#com.specknet.pdiotapp.barcode.BarcodeActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:123:9-125:52
-	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:125:13-49
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:124:13-52
-activity#com.specknet.pdiotapp.bluetooth.ConnectingActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:126:9-135:20
-	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:128:13-49
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:127:13-57
-intent-filter#action:name:com.specknet.pdiotapp.RESPECK_CONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:129:13-131:29
-action#com.specknet.pdiotapp.RESPECK_CONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:130:17-82
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:130:25-79
-intent-filter#action:name:com.specknet.pdiotapp.RESPECK_DISCONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:132:13-134:29
-action#com.specknet.pdiotapp.RESPECK_DISCONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:17-85
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:133:25-82
-service#com.specknet.pdiotapp.bluetooth.BluetoothService
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:137:9-144:19
-	android:enabled
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:139:13-35
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:57:13-49
 	android:exported
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:140:13-36
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:58:13-36
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:138:13-55
-intent-filter#action:name:com.specknet.respeckmodeltesting.RESPECK_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:141:13-143:29
-action#com.specknet.respeckmodeltesting.RESPECK_BROADCAST
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:142:17-93
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:56:13-48
+intent-filter#action:name:com.specknet.respeck.RESPECK_LIVE_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:59:13-61:29
+action#com.specknet.respeck.RESPECK_LIVE_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:60:17-86
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:142:25-90
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:60:25-83
+intent-filter#action:name:com.specknet.respeck.ACTION_RESPECK_LIVE_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:62:13-64:29
+action#com.specknet.respeck.ACTION_RESPECK_LIVE_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:63:17-93
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:63:25-90
+intent-filter#action:name:com.specknet.respeck.ACTION_RESPECK_REHAB_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:65:13-67:29
+action#com.specknet.respeck.ACTION_RESPECK_REHAB_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:66:17-94
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:66:25-91
+intent-filter#action:name:com.specknet.respeck.RESPECK_REHAB_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:68:13-70:29
+action#com.specknet.respeck.RESPECK_REHAB_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:69:17-87
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:69:25-84
+intent-filter#action:name:com.specknet.pdiotapp.RESPECK_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:71:13-73:29
+action#com.specknet.pdiotapp.RESPECK_BROADCAST
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:72:17-82
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:72:25-79
+activity#com.specknet.pdiotapp.barcode.BarcodeActivity
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:76:9-78:52
+	android:screenOrientation
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:78:13-49
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:77:13-52
+activity#com.specknet.pdiotapp.bluetooth.ConnectingActivity
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:80:9-90:20
+	android:screenOrientation
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:82:13-49
+	android:exported
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:83:13-36
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:81:13-57
+intent-filter#action:name:com.specknet.pdiotapp.RESPECK_CONNECTED
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:84:13-86:29
+action#com.specknet.pdiotapp.RESPECK_CONNECTED
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:85:17-82
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:85:25-79
+intent-filter#action:name:com.specknet.pdiotapp.RESPECK_DISCONNECTED
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:87:13-89:29
+action#com.specknet.pdiotapp.RESPECK_DISCONNECTED
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:88:17-85
+	android:name
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:88:25-82
 activity#com.specknet.pdiotapp.onboarding.OnBoardingActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:146:9-148:52
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:92:9-94:52
 	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:148:13-49
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:94:13-49
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:147:13-58
-activity#com.specknet.pdiotapp.RecordingActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:149:9-151:52
-	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:151:13-49
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:93:13-58
+activity#com.specknet.pdiotapp.login.StartActivity
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:96:9-56
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:150:13-46
-activity#com.specknet.pdiotapp.Login.StartActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:153:9-56
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:96:19-54
+activity#com.specknet.pdiotapp.login.RegisterActivity
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:97:9-59
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:153:19-54
-activity#com.specknet.pdiotapp.Login.RegisterActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:154:9-59
-	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:154:19-57
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:97:19-57
 activity#com.specknet.pdiotapp.retrieve.RetrieveActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:155:9-62
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:98:9-62
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:155:19-60
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:98:19-60
 activity#com.specknet.pdiotapp.MainActivity
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:157:9-171:20
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:100:9-115:20
 	android:screenOrientation
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:159:13-49
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:102:13-49
+	android:exported
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:103:13-36
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:158:13-41
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:101:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:160:13-164:29
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:104:13-108:29
 action#android.intent.action.MAIN
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:161:17-69
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:105:17-69
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:161:25-66
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:105:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:163:17-77
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:107:17-77
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:163:27-74
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:107:27-74
 intent-filter#action:name:com.specknet.respeckmodeltesting.RESPECK_CONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:165:13-167:29
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:109:13-111:29
 action#com.specknet.respeckmodeltesting.RESPECK_CONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:166:17-93
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:110:17-93
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:166:25-90
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:110:25-90
 intent-filter#action:name:com.specknet.respeckmodeltesting.RESPECK_DISCONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:168:13-170:29
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:112:13-114:29
 action#com.specknet.respeckmodeltesting.RESPECK_DISCONNECTED
-ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:169:17-96
+ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:113:17-96
 	android:name
-		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:169:25-93
+		ADDED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml:113:25-93
 uses-sdk
 INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/arnav/Downloads/pdiot-app-main-4/app/src/main/AndroidManifest.xml

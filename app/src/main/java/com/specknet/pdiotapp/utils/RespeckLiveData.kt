@@ -158,4 +158,3 @@ data class RESpeckLiveData(
 //    override fun toCsvString() = toStringForFile()
 
 }
-

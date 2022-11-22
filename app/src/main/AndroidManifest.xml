@@ -38,14 +38,6 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <activity
-            android:name=".classification.ClassificationActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
         <service
             android:name=".bluetooth.BluetoothSpeckService"
             android:enabled="true"
@@ -61,48 +53,9 @@
         </service>
 
         <activity
-            android:name=".live.LiveDataActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="com.specknet.respeck.RESPECK_LIVE_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.respeck.ACTION_RESPECK_LIVE_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.respeck.ACTION_RESPECK_REHAB_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.respeck.RESPECK_REHAB_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.pdiotapp.RESPECK_BROADCAST" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".Sensors.RespeckPage"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="com.specknet.respeck.RESPECK_LIVE_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.respeck.ACTION_RESPECK_LIVE_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.respeck.ACTION_RESPECK_REHAB_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.respeck.RESPECK_REHAB_BROADCAST" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.specknet.pdiotapp.RESPECK_BROADCAST" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".Sensors.ThingyPage"
-            android:screenOrientation="portrait">
+            android:name=".sensors.RespeckPage"
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.specknet.respeck.RESPECK_LIVE_BROADCAST" />
             </intent-filter>
@@ -123,9 +76,11 @@
         <activity
             android:name=".barcode.BarcodeActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".bluetooth.ConnectingActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.specknet.pdiotapp.RESPECK_CONNECTED" />
             </intent-filter>
@@ -134,29 +89,18 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".bluetooth.BluetoothService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.specknet.respeckmodeltesting.RESPECK_BROADCAST" />
-            </intent-filter>
-        </service>
-
         <activity
             android:name=".onboarding.OnBoardingActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".RecordingActivity"
-            android:screenOrientation="portrait" />
 
-        <activity android:name=".Login.StartActivity"/>
-        <activity android:name=".Login.RegisterActivity"/>
+        <activity android:name=".login.StartActivity"/>
+        <activity android:name=".login.RegisterActivity"/>
         <activity android:name=".retrieve.RetrieveActivity"/>
 
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

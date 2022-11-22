@@ -1,5 +1,6 @@
 package com.specknet.pdiotapp.bluetooth
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.PendingIntent
 import android.content.*
@@ -24,7 +25,6 @@ import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.Utils
 import kotlinx.android.synthetic.main.activity_connecting.*
 import java.util.*
-import kotlin.experimental.and
 
 class ConnectingActivity : AppCompatActivity() {
 
@@ -35,13 +35,6 @@ class ConnectingActivity : AppCompatActivity() {
     private lateinit var respeckID: EditText
     private lateinit var connectSensorsButton: Button
     private lateinit var restartConnectionButton: Button
-//    private lateinit var disconnectRespeckButton: Button
-
-    // Thingy
-//    private lateinit var scanThingyButton: Button
-    private lateinit var thingyID: EditText
-//    private lateinit var connectThingyButton: Button
-//    private lateinit var disconnectThingyButton: Button
 
     lateinit var sharedPreferences: SharedPreferences
 
@@ -59,8 +52,6 @@ class ConnectingActivity : AppCompatActivity() {
         connectSensorsButton = findViewById(R.id.connect_sensors_button)
         restartConnectionButton = findViewById(R.id.restart_service_button)
 
-        thingyID = findViewById(R.id.thingy_code)
-
         scanRespeckButton.setOnClickListener {
             val barcodeScanner = Intent(this, BarcodeActivity::class.java)
             startActivityForResult(barcodeScanner, REQUEST_CODE_SCAN_RESPECK)
@@ -75,11 +66,6 @@ class ConnectingActivity : AppCompatActivity() {
                 respeckID.text.toString()
             ).apply()
             sharedPreferences.edit().putInt(Constants.RESPECK_VERSION, 6).apply()
-
-            sharedPreferences.edit().putString(
-                Constants.THINGY_MAC_ADDRESS_PREF,
-                thingyID.text.toString()
-            ).apply()
 
             startSpeckService()
 
@@ -106,17 +92,6 @@ class ConnectingActivity : AppCompatActivity() {
             connectSensorsButton.isClickable = false
         }
 
-        if (sharedPreferences.contains(Constants.THINGY_MAC_ADDRESS_PREF)) {
-            Log.i("sharedpref", "Already saw a thingy ID")
-
-            thingy_code.setText(
-                sharedPreferences.getString(
-                    Constants.THINGY_MAC_ADDRESS_PREF,
-                    ""
-                )
-            )
-        }
-
         respeckID.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(cs: CharSequence, start: Int, before: Int, count: Int) {
                 if (cs.toString().trim().length != 17) {
@@ -139,7 +114,6 @@ class ConnectingActivity : AppCompatActivity() {
 
         respeckID.filters = arrayOf<InputFilter>(AllCaps())
 
-        thingyID.filters = arrayOf<InputFilter>(AllCaps())
         val nfcManager = getSystemService(Context.NFC_SERVICE) as NfcManager
         nfcAdapter = nfcManager.defaultAdapter
 
@@ -270,43 +244,6 @@ class ConnectingActivity : AppCompatActivity() {
                 respeckID.setText(ble_addr.toString())
 
             }
-            else {
-                // this is the thingy
-                Log.d(TAG, "handleIntent: here after type")
-                val tag: Tag? = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG)
-
-                val ndef = Ndef.get(tag)
-
-                if (ndef == null) {
-                    // NDEF is not supported by this Tag
-                    return
-                }
-
-                val ndefMessage = ndef.cachedNdefMessage
-                val records = ndefMessage.records
-
-                Log.i("NFCReader", "Read records")
-                Log.i("NFCReader", "Found " + records.size + " record(s)")
-                Log.i("NFCReader", records[1].toMimeType())
-
-                val payload = records[1].payload
-                Log.i("NFCReader", "Payload length: " + payload.size)
-
-                val payload_str = String(payload)
-                Log.i("NFCReader", "Payload: $payload_str")
-
-                val ble_addr = payload_str.substring(3, 20)
-//
-//                Log.i("NFCReader", "BLE name: $ble_name")
-//                val ble_addr: String = Utils.bytesToHex(Arrays.copyOfRange(payload, 5, 11))
-                Log.i("NFCReader", "BLE Address: $ble_addr")
-//
-                Toast.makeText(this, "NFC scanned ($ble_addr)", Toast.LENGTH_LONG).show()
-
-                thingyID.setText(ble_addr)
-
-            }
-
         }
     }
 
@@ -326,6 +263,7 @@ class ConnectingActivity : AppCompatActivity() {
         super.onPause()
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -366,7 +304,7 @@ class ConnectingActivity : AppCompatActivity() {
                 connectSensorsButton.isClickable = true
 
             } else {
-                respeck_code.setText("No respeck found :(")
+                respeck_code.setText("No respeck found")
             }
 
         }

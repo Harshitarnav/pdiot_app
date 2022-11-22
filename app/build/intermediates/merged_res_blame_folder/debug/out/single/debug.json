@@ -28,10 +28,6 @@
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_recording.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_recording.xml"
-    },
-    {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
@@ -68,16 +64,16 @@
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_retrieve_4.xml.flat",
+        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_retrieve_4.xml"
+    },
+    {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_notification.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/notification.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_thingy_page.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_thingy_page.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_ret_time.xml.flat",
@@ -90,10 +86,6 @@
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_img.png.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/img.png"
-    },
-    {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_login.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
@@ -152,16 +144,8 @@
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_live_data.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_live_data.xml"
-    },
-    {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_ic_ret_activity.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/drawable/ic_ret_activity.xml"
-    },
-    {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_main1.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_main1.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/drawable_indicator_unselected.xml.flat",
@@ -174,10 +158,6 @@
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_respeck_page.xml.flat",
         "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_respeck_page.xml"
-    },
-    {
-        "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_classification.xml.flat",
-        "source": "/Users/arnav/Downloads/pdiot-app-main-4/app/src/main/res/layout/activity_classification.xml"
     },
     {
         "merged": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/merged_res/debug/layout_activity_connecting.xml.flat",
