@@ -7,15 +7,8 @@ com/specknet/pdiotapp/databinding/ActivityRetrieve14Binding.java
 com/specknet/pdiotapp/retrieve/RetrieveActivity.java
  com.specknet.pdiotapp.retrieve.RetrieveActivity
  com.specknet.pdiotapp.retrieve.RetrieveActivity$1
-com/specknet/pdiotapp/bluetooth/BluetoothSpeckService.java
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$1
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$2
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$3
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$4
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$5
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$6
- com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$7
+com/specknet/pdiotapp/utils/RESpeckStoredSample.java
+ com.specknet.pdiotapp.utils.RESpeckStoredSample
 com/specknet/pdiotapp/MyFirebaseMessagingService.java
  com.specknet.pdiotapp.MyFirebaseMessagingService
 com/specknet/pdiotapp/utils/Utils.java
@@ -37,14 +30,8 @@ com/specknet/pdiotapp/utils/CountUpTimer.java
  com.specknet.pdiotapp.utils.CountUpTimer$1
 com/specknet/pdiotapp/databinding/ActivityRetrieve4Binding.java
  com.specknet.pdiotapp.databinding.ActivityRetrieve4Binding
-com/specknet/pdiotapp/MainActivity.java
- com.specknet.pdiotapp.MainActivity
- com.specknet.pdiotapp.MainActivity$1
- com.specknet.pdiotapp.MainActivity$2
- com.specknet.pdiotapp.MainActivity$3
- com.specknet.pdiotapp.MainActivity$4
- com.specknet.pdiotapp.MainActivity$5
- com.specknet.pdiotapp.MainActivity$6
+com/specknet/pdiotapp/databinding/ActivityRegisterBinding.java
+ com.specknet.pdiotapp.databinding.ActivityRegisterBinding
 com/specknet/pdiotapp/utils/Constants.java
  com.specknet.pdiotapp.utils.Constants
  com.specknet.pdiotapp.utils.Constants$1
@@ -60,7 +47,20 @@ com/specknet/pdiotapp/databinding/ActivityRespeckPageBinding.java
  com.specknet.pdiotapp.databinding.ActivityRespeckPageBinding
 com/specknet/pdiotapp/databinding/ActivityOnBoardingBinding.java
  com.specknet.pdiotapp.databinding.ActivityOnBoardingBinding
-com/specknet/pdiotapp/databinding/ActivityRegisterBinding.java
- com.specknet.pdiotapp.databinding.ActivityRegisterBinding
-com/specknet/pdiotapp/utils/RESpeckStoredSample.java
- com.specknet.pdiotapp.utils.RESpeckStoredSample
+com/specknet/pdiotapp/bluetooth/BluetoothSpeckService.java
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$1
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$2
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$3
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$4
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$5
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$6
+ com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$7
+com/specknet/pdiotapp/MainActivity.java
+ com.specknet.pdiotapp.MainActivity
+ com.specknet.pdiotapp.MainActivity$1
+ com.specknet.pdiotapp.MainActivity$2
+ com.specknet.pdiotapp.MainActivity$3
+ com.specknet.pdiotapp.MainActivity$4
+ com.specknet.pdiotapp.MainActivity$5
+ com.specknet.pdiotapp.MainActivity$6
