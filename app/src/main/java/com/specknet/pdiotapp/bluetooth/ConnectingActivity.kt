@@ -58,7 +58,6 @@ class ConnectingActivity : AppCompatActivity() {
         }
 
         connectSensorsButton.setOnClickListener {
-            // TODO don't enable this until both sensors have been scanned? or at least warn the user
             // start the bluetooth service
 
             sharedPreferences.edit().putString(

@@ -330,36 +330,44 @@ class RespeckPage : AppCompatActivity() {
             doc_ref.addSnapshotListener(this, object : EventListener<DocumentSnapshot?> {
                 override fun onEvent(value: DocumentSnapshot?, error: FirebaseFirestoreException?) {
                     assert(value != null)
-                    if (predictedLabel == "Lying down") {
-                        val myLong: Double = value!!.getDouble("Lying down") as Double
-                        act_val["Lying down"] = (myLong + 2.5)
-                        store!!.collection("users").document(userID!!)
-                            .set(act_val, SetOptions.merge())
-                    } else if (predictedLabel == "Running") {
-                        val myLong: Double = value!!.getDouble("Running") as Double
-                        act_val["Running"] = (myLong + 2.5)
-                        store!!.collection("users").document(userID!!)
-                            .set(act_val, SetOptions.merge())
-                    } else if (predictedLabel == "Sitting,Standing") {
-                        val myLong: Double = value!!.getDouble("Sitting,Standing") as Double
-                        act_val["Sitting,Standing"] = (myLong + 2.5)
-                        store!!.collection("users").document(userID!!)
-                            .set(act_val, SetOptions.merge())
-                    } else if (predictedLabel == "Stairs") {
-                        val myLong: Double = value!!.getDouble("Stairs") as Double
-                        act_val["Stairs"] = (myLong + 2.5)
-                        store!!.collection("users").document(userID!!)
-                            .set(act_val, SetOptions.merge())
-                    } else if (predictedLabel == "Walking") {
-                        val myLong: Double = value!!.getDouble("Walking") as Double
-                        act_val["Walking"] = (myLong + 2.5)
+
+
+                    //test morning this or that
+                    for (predictedLabel in ESSENTIAL_5_LABELS) {
+                        val myLong: Double = value!!.getDouble(predictedLabel) as Double
+                        act_val[predictedLabel] = (myLong + 2.5)
                         store!!.collection("users").document(userID!!)
                             .set(act_val, SetOptions.merge())
                     }
+//                    if (predictedLabel == "Lying down") {
+//                        val myLong: Double = value!!.getDouble("Lying down") as Double
+//                        act_val["Lying down"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    } else if (predictedLabel == "Running") {
+//                        val myLong: Double = value!!.getDouble("Running") as Double
+//                        act_val["Running"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    } else if (predictedLabel == "Sitting,Standing") {
+//                        val myLong: Double = value!!.getDouble("Sitting,Standing") as Double
+//                        act_val["Sitting,Standing"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    } else if (predictedLabel == "Stairs") {
+//                        val myLong: Double = value!!.getDouble("Stairs") as Double
+//                        act_val["Stairs"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    } else if (predictedLabel == "Walking") {
+//                        val myLong: Double = value!!.getDouble("Walking") as Double
+//                        act_val["Walking"] = (myLong + 2.5)
+//                        store!!.collection("users").document(userID!!)
+//                            .set(act_val, SetOptions.merge())
+//                    }
                 }
             })
         }
-        Log.i("is it",maxValue.toString())
         return maxValue
     }
 }

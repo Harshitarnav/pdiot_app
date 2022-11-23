@@ -4,7 +4,7 @@
             "outputFile": "/Users/arnav/Downloads/pdiot-app-main-4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/4db106591f5436da673b7f98e21989c9/transformed/appcompat-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/arnav/.gradle/caches/transforms-3/2b052a8d170e61ec04052c124ac1205e/transformed/appcompat-1.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arnav/.gradle/caches/transforms-3/e4bd92cfb30751bc94a2684f7fe461d6/transformed/core-1.2.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/arnav/.gradle/caches/transforms-3/456167c0d383a2d71b6469650724f5a8/transformed/core-1.2.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

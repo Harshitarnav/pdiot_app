@@ -25,12 +25,12 @@ import com.specknet.pdiotapp.R;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText email;
     private EditText password;
-    private Button register;
 
     private FirebaseAuth auth;
     private FirebaseFirestore store;
@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        register = findViewById(R.id.register);
+        Button register = findViewById(R.id.register);
 
         auth = FirebaseAuth.getInstance();
         store = FirebaseFirestore.getInstance();
@@ -73,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Toast.makeText(RegisterActivity.this, "Registering User successful!", Toast.LENGTH_SHORT).show();
-                    userID = auth.getCurrentUser().getUid();
+                    userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
                     DocumentReference doc_ref = store.collection("users").document(userID);
                     Map<String, Double> user = x.getUserMap();
                     // for a class of 5
@@ -136,8 +136,8 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    public class DataStorage {
-        private HashMap<String, Double> user = new HashMap<String, Double>();
+    public static class DataStorage {
+        private final HashMap<String, Double> user = new HashMap<String, Double>();
 
         public Map<String, Double> getUserMap() {
             return user;
