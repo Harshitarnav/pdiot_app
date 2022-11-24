@@ -96,7 +96,7 @@ class RespeckPage : AppCompatActivity() {
 
 //    private var liveData: RESpeckLiveData? = null
 
-    var model = "respeck_lstm_essential5.tflite"
+    var model = "respeck_lstm_essential5_64_n_9657.tflite"
     var classCount = 5
 //    var classCount = 14
     var featureCount = 6
@@ -172,10 +172,10 @@ class RespeckPage : AppCompatActivity() {
 
                     // Call to function processing the data must be here
                     // Normalize data
-                    val normData: FloatArray = normalizeData(data, RESPECK_MEANS, RESPECK_STDS)
+//                    val normData: FloatArray = normalizeData(data, RESPECK_MEANS, RESPECK_STDS)
 
                     window.remove()
-                    window.add(normData)
+                    window.add(data)
 
 //                    counter++
 
@@ -200,13 +200,13 @@ class RespeckPage : AppCompatActivity() {
         }
     }
 
-    private fun normalizeData(data: FloatArray, means: FloatArray, stds: FloatArray): FloatArray {
-        val normData = FloatArray(featureCount)
-        for (i in 0 until featureCount) {
-            normData[i] = (data[i] - means[i]) / stds[i]
-        }
-        return normData
-    }
+//    private fun normalizeData(data: FloatArray, means: FloatArray, stds: FloatArray): FloatArray {
+//        val normData = FloatArray(featureCount)
+//        for (i in 0 until featureCount) {
+//            normData[i] = (data[i] - means[i]) / stds[i]
+//        }
+//        return normData
+//    }
 
 
     fun setupCharts() {
@@ -263,7 +263,6 @@ class RespeckPage : AppCompatActivity() {
             dataSet_res_accel_x.addEntry(Entry(time, x))
             dataSet_res_accel_y.addEntry(Entry(time, y))
             dataSet_res_accel_z.addEntry(Entry(time, z))
-            Log.i("bhak", dataSet_res_accel_z.toString())
 
             runOnUiThread {
                 allRespeckData.notifyDataChanged()
