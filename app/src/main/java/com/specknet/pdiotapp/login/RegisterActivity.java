@@ -126,6 +126,7 @@ public class RegisterActivity extends AppCompatActivity {
                             Log.d("TAG", "onSuccess: User profile created for user "+ userID);
                         }
                     });
+                    Toast.makeText(RegisterActivity.this, "User Registered!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();

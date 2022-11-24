@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "User Registered!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
@@ -61,17 +60,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String txt_email = email.getText().toString();
                 String txt_password = password.getText().toString();
-                loginUser(txt_email, txt_password);
+                if (txt_password.isEmpty() && txt_email.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Enter your email and password!", Toast.LENGTH_SHORT).show();
+                }
+                else if (txt_password.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Password field empty!", Toast.LENGTH_SHORT).show();
+                }
+                else if (txt_email.isEmpty()){
+                    Toast.makeText(MainActivity.this, "Please enter your email!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    loginUser(txt_email, txt_password);
+                }
             }
         });
 
         guest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-//                String txt_email = "guest@gmail.com"; //for 14 classes
                 String txt_email = "guest5@gmail.com"; //for 5 classes
-//                String txt_email = "guest4@gmail.com"; //for 4 classes
                 String txt_password = "12345678";
                 loginGuestUser(txt_email, txt_password);
             }

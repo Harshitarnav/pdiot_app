@@ -321,8 +321,6 @@ class RespeckPage : AppCompatActivity() {
         if (maxIndex != -1) {
             val predictedLabel = ESSENTIAL_5_LABELS[maxIndex]
             val confidence = maxValue * 100
-//            val label = String.format("%s", predictedLabel)
-//            output.text = label
 
             userID = auth!!.currentUser!!.uid
             val act_val= mutableMapOf<String, Any>()

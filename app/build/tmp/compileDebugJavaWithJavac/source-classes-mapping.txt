@@ -4,21 +4,22 @@ com/specknet/pdiotapp/databinding/NotificationBinding.java
  com.specknet.pdiotapp.databinding.NotificationBinding
 com/specknet/pdiotapp/databinding/ActivityRetrieve14Binding.java
  com.specknet.pdiotapp.databinding.ActivityRetrieve14Binding
-com/specknet/pdiotapp/retrieve/RetrieveActivity.java
- com.specknet.pdiotapp.retrieve.RetrieveActivity
- com.specknet.pdiotapp.retrieve.RetrieveActivity$1
+com/specknet/pdiotapp/MainActivity.java
+ com.specknet.pdiotapp.MainActivity
+ com.specknet.pdiotapp.MainActivity$1
+ com.specknet.pdiotapp.MainActivity$2
+ com.specknet.pdiotapp.MainActivity$3
+ com.specknet.pdiotapp.MainActivity$4
+ com.specknet.pdiotapp.MainActivity$5
+ com.specknet.pdiotapp.MainActivity$6
 com/specknet/pdiotapp/utils/RESpeckStoredSample.java
  com.specknet.pdiotapp.utils.RESpeckStoredSample
-com/specknet/pdiotapp/MyFirebaseMessagingService.java
- com.specknet.pdiotapp.MyFirebaseMessagingService
+com/specknet/pdiotapp/databinding/ActivityRespeckPageBinding.java
+ com.specknet.pdiotapp.databinding.ActivityRespeckPageBinding
 com/specknet/pdiotapp/utils/Utils.java
  com.specknet.pdiotapp.utils.Utils
-com/specknet/pdiotapp/login/RegisterActivity.java
- com.specknet.pdiotapp.login.RegisterActivity
- com.specknet.pdiotapp.login.RegisterActivity$1
- com.specknet.pdiotapp.login.RegisterActivity$2
- com.specknet.pdiotapp.login.RegisterActivity$2$1
- com.specknet.pdiotapp.login.RegisterActivity$DataStorage
+com/specknet/pdiotapp/databinding/ActivityOnBoardingBinding.java
+ com.specknet.pdiotapp.databinding.ActivityOnBoardingBinding
 com/specknet/pdiotapp/databinding/ActivityRetrieveBinding.java
  com.specknet.pdiotapp.databinding.ActivityRetrieveBinding
 com/specknet/pdiotapp/databinding/ActivityStartBinding.java
@@ -43,10 +44,6 @@ com/specknet/pdiotapp/BuildConfig.java
  com.specknet.pdiotapp.BuildConfig
 com/specknet/pdiotapp/databinding/FragmentOnBoardingBinding.java
  com.specknet.pdiotapp.databinding.FragmentOnBoardingBinding
-com/specknet/pdiotapp/databinding/ActivityRespeckPageBinding.java
- com.specknet.pdiotapp.databinding.ActivityRespeckPageBinding
-com/specknet/pdiotapp/databinding/ActivityOnBoardingBinding.java
- com.specknet.pdiotapp.databinding.ActivityOnBoardingBinding
 com/specknet/pdiotapp/bluetooth/BluetoothSpeckService.java
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$1
@@ -56,11 +53,14 @@ com/specknet/pdiotapp/bluetooth/BluetoothSpeckService.java
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$5
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$6
  com.specknet.pdiotapp.bluetooth.BluetoothSpeckService$7
-com/specknet/pdiotapp/MainActivity.java
- com.specknet.pdiotapp.MainActivity
- com.specknet.pdiotapp.MainActivity$1
- com.specknet.pdiotapp.MainActivity$2
- com.specknet.pdiotapp.MainActivity$3
- com.specknet.pdiotapp.MainActivity$4
- com.specknet.pdiotapp.MainActivity$5
- com.specknet.pdiotapp.MainActivity$6
+com/specknet/pdiotapp/MyFirebaseMessagingService.java
+ com.specknet.pdiotapp.MyFirebaseMessagingService
+com/specknet/pdiotapp/login/RegisterActivity.java
+ com.specknet.pdiotapp.login.RegisterActivity
+ com.specknet.pdiotapp.login.RegisterActivity$1
+ com.specknet.pdiotapp.login.RegisterActivity$2
+ com.specknet.pdiotapp.login.RegisterActivity$2$1
+ com.specknet.pdiotapp.login.RegisterActivity$DataStorage
+com/specknet/pdiotapp/retrieve/RetrieveActivity.java
+ com.specknet.pdiotapp.retrieve.RetrieveActivity
+ com.specknet.pdiotapp.retrieve.RetrieveActivity$1
