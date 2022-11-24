@@ -58,10 +58,11 @@
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="300dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="207dp"
         android:background="@drawable/ic_button"
         android:text="register"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </RelativeLayout>
