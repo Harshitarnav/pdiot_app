@@ -10,18 +10,16 @@
         android:id="@+id/output"
         android:layout_width="302dp"
         android:layout_height="115dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/ic_button"
         android:gravity="center_vertical|center_horizontal"
         android:text="Confidence Level: Activity"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/respeck_graphs"
@@ -29,7 +27,6 @@
         android:layout_height="475dp"
         android:layout_marginTop="40dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
