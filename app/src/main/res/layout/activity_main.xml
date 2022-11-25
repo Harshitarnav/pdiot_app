@@ -18,19 +18,17 @@
             android:id="@+id/textView2"
             android:layout_width="252dp"
             android:layout_height="68dp"
-            android:layout_marginTop="100px"
+            android:layout_marginTop="200px"
             android:background="@android:drawable/dialog_holo_light_frame"
             android:gravity="center_vertical|center_horizontal"
             android:text="Welcome!"
             android:textColor="#6082B6"
             android:textSize="28dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/classification_button"
-            app:layout_constraintVertical_bias="0.5" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/record_button"
@@ -42,71 +40,68 @@
             android:textColor="#FFFFFF"
             android:textSize="16dp"
             app:layout_constraintBottom_toTopOf="@id/retrieve_button"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ble_button"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.05"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ble_button" />
+            app:layout_constraintStart_toStartOf="@+id/ble_button"
+            app:layout_constraintTop_toBottomOf="@+id/ble_button"
+            app:layout_constraintVertical_bias="0.05" />
 
         <Button
             android:id="@+id/ble_button"
             android:layout_width="163dp"
             android:layout_height="77dp"
-            android:layout_marginTop="100px"
-            android:layout_marginBottom="100px"
+            android:layout_marginTop="15px"
             android:background="@drawable/ic_button"
             android:text="Connect sensors"
             android:textColor="#FFFFFF"
             android:textSize="16dp"
             app:layout_constraintBottom_toTopOf="@id/record_button"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/classification_button"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/classification_button"
-            app:layout_constraintVertical_bias="0.05" />
+            app:layout_constraintStart_toStartOf="@+id/classification_button"
+            app:layout_constraintTop_toBottomOf="@+id/classification_button" />
 
         <Spinner
             android:id="@+id/classification_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
             android:text="CLASSIFICATION"
             app:layout_constraintBottom_toTopOf="@+id/ble_button"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.2" />
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <Button
             android:id="@+id/logout"
             android:layout_width="83dp"
             android:layout_height="47dp"
             android:layout_centerInParent="true"
+            android:layout_marginTop="10px"
             android:background="@drawable/ic_button_logout"
             android:text="Logout"
             android:textColor="@color/dark_grey"
             android:textSize="12dp"
-            app:layout_constraintBottom_toTopOf="@+id/record_button"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/retrieve_button"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.2" />
+            app:layout_constraintStart_toStartOf="@+id/retrieve_button"
+            app:layout_constraintTop_toBottomOf="@+id/retrieve_button" />
 
         <Button
             android:id="@+id/retrieve_button"
             android:layout_width="163dp"
             android:layout_height="77dp"
-            android:layout_marginTop="100px"
+            android:layout_marginTop="10px"
             android:background="@drawable/ic_button"
             android:text="Retrieve Data"
             android:textColor="#FFFFFF"
             android:textSize="16dp"
             app:layout_constraintBottom_toTopOf="@+id/logout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/record_button"
-            app:layout_constraintVertical_bias="0.05" />
+            app:layout_constraintEnd_toEndOf="@+id/record_button"
+            app:layout_constraintStart_toStartOf="@+id/record_button"
+            app:layout_constraintTop_toBottomOf="@+id/record_button" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
